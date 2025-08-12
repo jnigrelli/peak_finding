@@ -1,7 +1,8 @@
 import numpy as np
 from scipy.signal import find_peaks
 
-from tests.test_utils import DIV_1, DIV_2, DIV_3, DIV_NONE, PRIORITY, DIV_PS_1, DIV_PS_2, DIV_PS_3
+from tests.test_utils import DIV_1, DIV_2, DIV_3, DIV_NONE, PRIORITY,\
+    DIV_PS_1, DIV_PS_2, DIV_PS_3
 
 from peak_finding.interface import find_peaks_wrapper, keep_func_wrapper
 from peak_finding.interface import argsort_wrapper
@@ -59,15 +60,12 @@ class TestKeepFunc():
         keep = np.array([0, 0, 1])
         arr = np.array([3, 9, 2])
         self.helper(arr, keep)
-
-        # print(keep_func_wrapper(arr, keep))
         
     
     def test_keep_none(self):
         keep = np.array([0, 0, 0])
         arr = np.array([4, 1, 3])
 
-        # print(keep_func_wrapper(arr, keep))
         self.helper(arr, keep)
 
 
@@ -75,5 +73,4 @@ class TestKeepFunc():
         keep = np.array([1, 1, 1])
         arr = np.array([3, 2, 9])
 
-        # print(keep_func_wrapper(arr, keep))
         self.helper(arr, keep)
