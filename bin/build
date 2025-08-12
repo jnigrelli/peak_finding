@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+./bin/clean
+
+python setup.py --annotate build_ext --inplace

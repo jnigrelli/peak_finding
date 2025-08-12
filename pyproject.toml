@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools >= 65.5.0", "Cython", "numpy>=1.23.5"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peak_finding"
+version = "1.0"
+description = "A Cython implementation of a limited subset of scipy's find_peaks functionality."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.23.5",
+    "Cython",
+    "pytest",
+    "scipy"
+]
+
+[tool.setuptools]
+packages = ["peak_finding"]
