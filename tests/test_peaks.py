@@ -10,8 +10,8 @@ from peak_finding.interface import argsort_wrapper, keep_func_wrapper
 
 def peak_template(div_samples):
     a, _ = signal.find_peaks(div_samples, prominence=0.15, distance=10)
-    b = find_peak(div_samples, 0.15, 10)
-    c = find_peaks(div_samples, 0.15, 10)
+    b = find_peak(div_samples, prominence=0.15, distance=10)
+    c = find_peaks(div_samples, prominence=0.15, distance=10)
 
     assert np.allclose(a, c)
 
