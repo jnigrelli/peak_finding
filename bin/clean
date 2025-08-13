@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Change this to the folder you want to clean
 TARGET_DIR="src/peak_finding/"
 
-# Remove all .c and .so files in the target directory (non-recursive)
 rm -f "$TARGET_DIR"/*.so "$TARGET_DIR"/*.html
 rm -rf build/

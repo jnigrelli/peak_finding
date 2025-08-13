@@ -1910,6 +1910,7 @@ static unsigned char *(*__pyx_f_12peak_finding_19_peak_finding_utils__select_by_
 
 /* Module declarations from "peak_finding._peak_finding" */
 static struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_f_12peak_finding_13_peak_finding_keep_func(Py_ssize_t const *, unsigned char const *, Py_ssize_t const ); /*proto*/
+static struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const *, double const , Py_ssize_t const , Py_ssize_t const ); /*proto*/
 static unsigned char *__pyx_f_12peak_finding_13_peak_finding__select_by_property(double const *, double const , Py_ssize_t const ); /*proto*/
 /* #### Code section: typeinfo ### */
 /* #### Code section: before_global_var ### */
@@ -2341,7 +2342,7 @@ static unsigned char *__pyx_f_12peak_finding_13_peak_finding__select_by_property
  *     #     keep &= (pmin <= peak_properties)
  *     return keep             # <<<<<<<<<<<<<<
  * 
- * cdef Py_ssize_t find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
+ * cdef dynamic_arr find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
 */
   __pyx_r = __pyx_v_keep;
   goto __pyx_L0;
@@ -2362,31 +2363,20 @@ static unsigned char *__pyx_f_12peak_finding_13_peak_finding__select_by_property
 /* "peak_finding/_peak_finding.pyx":57
  *     return keep
  * 
- * cdef Py_ssize_t find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:             # <<<<<<<<<<<<<<
+ * cdef dynamic_arr find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:             # <<<<<<<<<<<<<<
  *     cdef:
- *         Py_ssize_t peak_idx = -1
+ *         dynamic_arr peaks
 */
 
-static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const *__pyx_v_x, double const __pyx_v_prominence, Py_ssize_t const __pyx_v_distance, Py_ssize_t const __pyx_v_size) {
-  Py_ssize_t __pyx_v_peak_idx;
+static struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const *__pyx_v_x, double const __pyx_v_prominence, Py_ssize_t const __pyx_v_distance, Py_ssize_t const __pyx_v_size) {
   struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_v_peaks;
   unsigned char *__pyx_v_keep;
   Py_ssize_t *__pyx_v_temp;
   double *__pyx_v_prominences;
-  Py_ssize_t __pyx_r;
+  struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_r;
   Py_ssize_t *__pyx_t_1;
-  int __pyx_t_2;
 
-  /* "peak_finding/_peak_finding.pyx":59
- * cdef Py_ssize_t find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
- *     cdef:
- *         Py_ssize_t peak_idx = -1             # <<<<<<<<<<<<<<
- *         dynamic_arr peaks
- *         unsigned char* keep
-*/
-  __pyx_v_peak_idx = -1L;
-
-  /* "peak_finding/_peak_finding.pyx":65
+  /* "peak_finding/_peak_finding.pyx":64
  *         double* prominences
  * 
  *     peaks = _local_maxima_1d(x, size)             # <<<<<<<<<<<<<<
@@ -2395,7 +2385,7 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
 */
   __pyx_v_peaks = __pyx_f_12peak_finding_19_peak_finding_utils__local_maxima_1d(__pyx_v_x, __pyx_v_size);
 
-  /* "peak_finding/_peak_finding.pyx":67
+  /* "peak_finding/_peak_finding.pyx":66
  *     peaks = _local_maxima_1d(x, size)
  * 
  *     keep = _select_by_peak_distance(peaks.arr, x, distance, peaks.size)             # <<<<<<<<<<<<<<
@@ -2404,7 +2394,7 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
 */
   __pyx_v_keep = __pyx_f_12peak_finding_19_peak_finding_utils__select_by_peak_distance(__pyx_v_peaks.arr, __pyx_v_x, __pyx_v_distance, __pyx_v_peaks.size);
 
-  /* "peak_finding/_peak_finding.pyx":69
+  /* "peak_finding/_peak_finding.pyx":68
  *     keep = _select_by_peak_distance(peaks.arr, x, distance, peaks.size)
  * 
  *     temp = peaks.arr             # <<<<<<<<<<<<<<
@@ -2414,7 +2404,7 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
   __pyx_t_1 = __pyx_v_peaks.arr;
   __pyx_v_temp = __pyx_t_1;
 
-  /* "peak_finding/_peak_finding.pyx":70
+  /* "peak_finding/_peak_finding.pyx":69
  * 
  *     temp = peaks.arr
  *     peaks = keep_func(peaks.arr, keep, peaks.size)             # <<<<<<<<<<<<<<
@@ -2423,7 +2413,7 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
 */
   __pyx_v_peaks = __pyx_f_12peak_finding_13_peak_finding_keep_func(__pyx_v_peaks.arr, __pyx_v_keep, __pyx_v_peaks.size);
 
-  /* "peak_finding/_peak_finding.pyx":71
+  /* "peak_finding/_peak_finding.pyx":70
  *     temp = peaks.arr
  *     peaks = keep_func(peaks.arr, keep, peaks.size)
  *     free(temp)             # <<<<<<<<<<<<<<
@@ -2432,7 +2422,7 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
 */
   free(__pyx_v_temp);
 
-  /* "peak_finding/_peak_finding.pyx":72
+  /* "peak_finding/_peak_finding.pyx":71
  *     peaks = keep_func(peaks.arr, keep, peaks.size)
  *     free(temp)
  *     free(keep)             # <<<<<<<<<<<<<<
@@ -2441,7 +2431,7 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
 */
   free(__pyx_v_keep);
 
-  /* "peak_finding/_peak_finding.pyx":74
+  /* "peak_finding/_peak_finding.pyx":73
  *     free(keep)
  * 
  *     prominences = _peak_prominences(x, peaks.arr, size, peaks.size)             # <<<<<<<<<<<<<<
@@ -2450,7 +2440,7 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
 */
   __pyx_v_prominences = __pyx_f_12peak_finding_19_peak_finding_utils__peak_prominences(__pyx_v_x, __pyx_v_peaks.arr, __pyx_v_size, __pyx_v_peaks.size);
 
-  /* "peak_finding/_peak_finding.pyx":76
+  /* "peak_finding/_peak_finding.pyx":75
  *     prominences = _peak_prominences(x, peaks.arr, size, peaks.size)
  * 
  *     keep = _select_by_property(prominences, prominence, peaks.size)             # <<<<<<<<<<<<<<
@@ -2459,7 +2449,7 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
 */
   __pyx_v_keep = __pyx_f_12peak_finding_13_peak_finding__select_by_property(__pyx_v_prominences, __pyx_v_prominence, __pyx_v_peaks.size);
 
-  /* "peak_finding/_peak_finding.pyx":77
+  /* "peak_finding/_peak_finding.pyx":76
  * 
  *     keep = _select_by_property(prominences, prominence, peaks.size)
  *     free(prominences)             # <<<<<<<<<<<<<<
@@ -2468,7 +2458,7 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
 */
   free(__pyx_v_prominences);
 
-  /* "peak_finding/_peak_finding.pyx":79
+  /* "peak_finding/_peak_finding.pyx":78
  *     free(prominences)
  * 
  *     temp = peaks.arr             # <<<<<<<<<<<<<<
@@ -2478,7 +2468,7 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
   __pyx_t_1 = __pyx_v_peaks.arr;
   __pyx_v_temp = __pyx_t_1;
 
-  /* "peak_finding/_peak_finding.pyx":80
+  /* "peak_finding/_peak_finding.pyx":79
  * 
  *     temp = peaks.arr
  *     peaks = keep_func(peaks.arr, keep, peaks.size)             # <<<<<<<<<<<<<<
@@ -2487,7 +2477,7 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
 */
   __pyx_v_peaks = __pyx_f_12peak_finding_13_peak_finding_keep_func(__pyx_v_peaks.arr, __pyx_v_keep, __pyx_v_peaks.size);
 
-  /* "peak_finding/_peak_finding.pyx":81
+  /* "peak_finding/_peak_finding.pyx":80
  *     temp = peaks.arr
  *     peaks = keep_func(peaks.arr, keep, peaks.size)
  *     free(temp)             # <<<<<<<<<<<<<<
@@ -2496,26 +2486,81 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
 */
   free(__pyx_v_temp);
 
-  /* "peak_finding/_peak_finding.pyx":82
+  /* "peak_finding/_peak_finding.pyx":81
  *     peaks = keep_func(peaks.arr, keep, peaks.size)
  *     free(temp)
  *     free(keep)             # <<<<<<<<<<<<<<
  * 
- *     if peaks.size == 1:
+ * 
 */
   free(__pyx_v_keep);
 
   /* "peak_finding/_peak_finding.pyx":84
- *     free(keep)
+ * 
+ * 
+ *     return peaks             # <<<<<<<<<<<<<<
+ * 
+ * cdef Py_ssize_t find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
+*/
+  __pyx_r = __pyx_v_peaks;
+  goto __pyx_L0;
+
+  /* "peak_finding/_peak_finding.pyx":57
+ *     return keep
+ * 
+ * cdef dynamic_arr find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:             # <<<<<<<<<<<<<<
+ *     cdef:
+ *         dynamic_arr peaks
+*/
+
+  /* function exit code */
+  __pyx_L0:;
+  return __pyx_r;
+}
+
+/* "peak_finding/_peak_finding.pyx":86
+ *     return peaks
+ * 
+ * cdef Py_ssize_t find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:             # <<<<<<<<<<<<<<
+ *     cdef dynamic_arr peaks = find_peaks(x, prominence, distance, size)
+ *     cdef Py_ssize_t peak_idx = -1
+*/
+
+static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peak(double const *__pyx_v_x, double const __pyx_v_prominence, Py_ssize_t const __pyx_v_distance, Py_ssize_t const __pyx_v_size) {
+  struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_v_peaks;
+  Py_ssize_t __pyx_v_peak_idx;
+  Py_ssize_t __pyx_r;
+  int __pyx_t_1;
+
+  /* "peak_finding/_peak_finding.pyx":87
+ * 
+ * cdef Py_ssize_t find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
+ *     cdef dynamic_arr peaks = find_peaks(x, prominence, distance, size)             # <<<<<<<<<<<<<<
+ *     cdef Py_ssize_t peak_idx = -1
+ * 
+*/
+  __pyx_v_peaks = __pyx_f_12peak_finding_13_peak_finding_find_peaks(__pyx_v_x, __pyx_v_prominence, __pyx_v_distance, __pyx_v_size);
+
+  /* "peak_finding/_peak_finding.pyx":88
+ * cdef Py_ssize_t find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
+ *     cdef dynamic_arr peaks = find_peaks(x, prominence, distance, size)
+ *     cdef Py_ssize_t peak_idx = -1             # <<<<<<<<<<<<<<
+ * 
+ *     if peaks.size == 1:
+*/
+  __pyx_v_peak_idx = -1L;
+
+  /* "peak_finding/_peak_finding.pyx":90
+ *     cdef Py_ssize_t peak_idx = -1
  * 
  *     if peaks.size == 1:             # <<<<<<<<<<<<<<
  *         peak_idx = peaks.arr[0]
  * 
 */
-  __pyx_t_2 = (__pyx_v_peaks.size == 1);
-  if (__pyx_t_2) {
+  __pyx_t_1 = (__pyx_v_peaks.size == 1);
+  if (__pyx_t_1) {
 
-    /* "peak_finding/_peak_finding.pyx":85
+    /* "peak_finding/_peak_finding.pyx":91
  * 
  *     if peaks.size == 1:
  *         peak_idx = peaks.arr[0]             # <<<<<<<<<<<<<<
@@ -2524,8 +2569,8 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
 */
     __pyx_v_peak_idx = (__pyx_v_peaks.arr[0]);
 
-    /* "peak_finding/_peak_finding.pyx":84
- *     free(keep)
+    /* "peak_finding/_peak_finding.pyx":90
+ *     cdef Py_ssize_t peak_idx = -1
  * 
  *     if peaks.size == 1:             # <<<<<<<<<<<<<<
  *         peak_idx = peaks.arr[0]
@@ -2533,7 +2578,7 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
 */
   }
 
-  /* "peak_finding/_peak_finding.pyx":87
+  /* "peak_finding/_peak_finding.pyx":93
  *         peak_idx = peaks.arr[0]
  * 
  *     free(peaks.arr)             # <<<<<<<<<<<<<<
@@ -2541,7 +2586,7 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
 */
   free(__pyx_v_peaks.arr);
 
-  /* "peak_finding/_peak_finding.pyx":88
+  /* "peak_finding/_peak_finding.pyx":94
  * 
  *     free(peaks.arr)
  *     return peak_idx             # <<<<<<<<<<<<<<
@@ -2549,12 +2594,12 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const
   __pyx_r = __pyx_v_peak_idx;
   goto __pyx_L0;
 
-  /* "peak_finding/_peak_finding.pyx":57
- *     return keep
+  /* "peak_finding/_peak_finding.pyx":86
+ *     return peaks
  * 
- * cdef Py_ssize_t find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:             # <<<<<<<<<<<<<<
- *     cdef:
- *         Py_ssize_t peak_idx = -1
+ * cdef Py_ssize_t find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:             # <<<<<<<<<<<<<<
+ *     cdef dynamic_arr peaks = find_peaks(x, prominence, distance, size)
+ *     cdef Py_ssize_t peak_idx = -1
 */
 
   /* function exit code */
@@ -2608,7 +2653,8 @@ static int __Pyx_modinit_function_export_code(__pyx_mstatetype *__pyx_mstate) {
   __Pyx_RefNannySetupContext("__Pyx_modinit_function_export_code", 0);
   /*--- Function export code ---*/
   if (__Pyx_ExportFunction("keep_func", (void (*)(void))__pyx_f_12peak_finding_13_peak_finding_keep_func, "struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr (Py_ssize_t const *, unsigned char const *, Py_ssize_t const )") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ExportFunction("find_peaks", (void (*)(void))__pyx_f_12peak_finding_13_peak_finding_find_peaks, "Py_ssize_t (double const *, double const , Py_ssize_t const , Py_ssize_t const )") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ExportFunction("find_peaks", (void (*)(void))__pyx_f_12peak_finding_13_peak_finding_find_peaks, "struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr (double const *, double const , Py_ssize_t const , Py_ssize_t const )") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ExportFunction("find_peak", (void (*)(void))__pyx_f_12peak_finding_13_peak_finding_find_peak, "Py_ssize_t (double const *, double const , Py_ssize_t const , Py_ssize_t const )") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;

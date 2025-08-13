@@ -54,9 +54,8 @@ cdef unsigned char* _select_by_property(const double* peak_properties, const dou
     #     keep &= (pmin <= peak_properties)
     return keep
 
-cdef Py_ssize_t find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
+cdef dynamic_arr find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
     cdef:
-        Py_ssize_t peak_idx = -1
         dynamic_arr peaks
         unsigned char* keep
         Py_ssize_t* temp
@@ -81,6 +80,13 @@ cdef Py_ssize_t find_peaks(const double* x, const double prominence, const Py_ss
     free(temp)
     free(keep)
 
+
+    return peaks
+
+cdef Py_ssize_t find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
+    cdef dynamic_arr peaks = find_peaks(x, prominence, distance, size)
+    cdef Py_ssize_t peak_idx = -1
+    
     if peaks.size == 1:
         peak_idx = peaks.arr[0]
     
