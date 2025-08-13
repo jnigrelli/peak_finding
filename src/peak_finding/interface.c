@@ -2640,14 +2640,14 @@ static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_dou
 static CYTHON_INLINE PyObject *__pyx_memview_get_Py_ssize_t(const char *itemp);
 static CYTHON_INLINE int __pyx_memview_set_Py_ssize_t(const char *itemp, PyObject *obj);
 
+/* MemviewDtypeToObject.proto */
+static CYTHON_INLINE PyObject *__pyx_memview_get_double__const__(const char *itemp);
+
 /* ObjectToMemviewSlice.proto */
 static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_ds_double(PyObject *, int writable_flag);
 
 /* ObjectToMemviewSlice.proto */
 static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_ds_Py_ssize_t(PyObject *, int writable_flag);
-
-/* MemviewDtypeToObject.proto */
-static CYTHON_INLINE PyObject *__pyx_memview_get_double__const__(const char *itemp);
 
 /* MemviewSliceCopyTemplate.proto */
 static __Pyx_memviewslice
@@ -2816,8 +2816,8 @@ static Py_ssize_t *(*__pyx_f_12peak_finding_19_peak_finding_utils_argsort)(doubl
 
 /* Module declarations from "peak_finding._peak_finding" */
 static struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr (*__pyx_f_12peak_finding_13_peak_finding_keep_func)(Py_ssize_t const *, unsigned char const *, Py_ssize_t const ); /*proto*/
-static struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr (*__pyx_f_12peak_finding_13_peak_finding_find_peaks)(double const *, double const , Py_ssize_t const , Py_ssize_t const ); /*proto*/
-static Py_ssize_t (*__pyx_f_12peak_finding_13_peak_finding_find_peak)(double const *, double const , Py_ssize_t const , Py_ssize_t const ); /*proto*/
+static struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr (*__pyx_f_12peak_finding_13_peak_finding__find_peaks)(double const *, double const , Py_ssize_t const , Py_ssize_t const ); /*proto*/
+static Py_ssize_t (*__pyx_f_12peak_finding_13_peak_finding__find_peak)(double const *, double const , Py_ssize_t const , Py_ssize_t const ); /*proto*/
 
 /* Module declarations from "peak_finding.interface" */
 static PyObject *__pyx_collections_abc_Sequence = 0;
@@ -2930,6 +2930,7 @@ static const char __pyx_k_step[] = "step";
 static const char __pyx_k_stop[] = "stop";
 static const char __pyx_k_test[] = "__test__";
 static const char __pyx_k_ASCII[] = "ASCII";
+static const char __pyx_k_Qaq_1[] = "\200\001\340\004\030\230\001\340\004\013\210:\220Q\220a\220q\230\001\230\024\230\\\250\032\2601";
 static const char __pyx_k_array[] = "array";
 static const char __pyx_k_at_0x[] = " at 0x";
 static const char __pyx_k_class[] = "__class__";
@@ -2953,7 +2954,6 @@ static const char __pyx_k_reduce[] = "__reduce__";
 static const char __pyx_k_struct[] = "struct";
 static const char __pyx_k_unpack[] = "unpack";
 static const char __pyx_k_update[] = "update";
-static const char __pyx_k_9AQaq_L[] = "\200\001\340\004\030\230\001\340\004\013\2109\220A\220Q\220a\220q\230\004\230L\250\n\260!";
 static const char __pyx_k_disable[] = "disable";
 static const char __pyx_k_fortran[] = "fortran";
 static const char __pyx_k_indices[] = "indices";
@@ -2976,11 +2976,13 @@ static const char __pyx_k_setstate[] = "__setstate__";
 static const char __pyx_k_TypeError[] = "TypeError";
 static const char __pyx_k_darr_view[] = "darr_view";
 static const char __pyx_k_enumerate[] = "enumerate";
+static const char __pyx_k_find_peak[] = "find_peak";
 static const char __pyx_k_isenabled[] = "isenabled";
 static const char __pyx_k_pyx_state[] = "__pyx_state";
 static const char __pyx_k_reduce_ex[] = "__reduce_ex__";
 static const char __pyx_k_IndexError[] = "IndexError";
 static const char __pyx_k_ValueError[] = "ValueError";
+static const char __pyx_k_find_peaks[] = "find_peaks";
 static const char __pyx_k_prominence[] = "prominence";
 static const char __pyx_k_pyx_vtable[] = "__pyx_vtable__";
 static const char __pyx_k_MemoryError[] = "MemoryError";
@@ -3000,16 +3002,14 @@ static const char __pyx_k_argsort_wrapper[] = "argsort_wrapper";
 static const char __pyx_k_collections_abc[] = "collections.abc";
 static const char __pyx_k_dtype_is_object[] = "dtype_is_object";
 static const char __pyx_k_setstate_cython[] = "__setstate_cython__";
-static const char __pyx_k_find_peak_wrapper[] = "find_peak_wrapper";
 static const char __pyx_k_keep_func_wrapper[] = "keep_func_wrapper";
 static const char __pyx_k_pyx_unpickle_Enum[] = "__pyx_unpickle_Enum";
 static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
-static const char __pyx_k_find_peaks_wrapper[] = "find_peaks_wrapper";
 static const char __pyx_k_strided_and_direct[] = "<strided and direct>";
+static const char __pyx_k_Kq_4_XQ_M_XT_F_1_Q_1[] = "\200\001\340\004\030\230\001\330\004\034\230K\240q\250\001\250\021\250!\2504\250|\270:\300X\310Q\340\004$\240M\260\024\260X\270T\300\021\330\004\n\210\"\210F\220!\2201\340\004\010\210\001\210\024\210Q\330\004\013\2101";
 static const char __pyx_k_strided_and_indirect[] = "<strided and indirect>";
 static const char __pyx_k_Invalid_shape_in_axis[] = "Invalid shape in axis ";
-static const char __pyx_k_Jaq_l_HA_M_XT_F_1_Q_1[] = "\200\001\340\004\030\230\001\330\004\034\230J\240a\240q\250\001\250\021\250$\250l\270*\300H\310A\340\004$\240M\260\024\260X\270T\300\021\330\004\n\210\"\210F\220!\2201\340\004\010\210\001\210\024\210Q\330\004\013\2101";
 static const char __pyx_k_contiguous_and_direct[] = "<contiguous and direct>";
 static const char __pyx_k_Cannot_index_with_type[] = "Cannot index with type '";
 static const char __pyx_k_peak_finding_interface[] = "peak_finding.interface";
@@ -3082,9 +3082,9 @@ static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED 
 static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_12peak_finding_9interface_keep_func_wrapper(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_arr, __Pyx_memviewslice __pyx_v_indices); /* proto */
-static PyObject *__pyx_pf_12peak_finding_9interface_2find_peak_wrapper(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_iterable, double __pyx_v_prominence, Py_ssize_t __pyx_v_distance); /* proto */
-static PyObject *__pyx_pf_12peak_finding_9interface_4find_peaks_wrapper(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_iterable, double __pyx_v_prominence, Py_ssize_t __pyx_v_distance); /* proto */
-static PyObject *__pyx_pf_12peak_finding_9interface_6argsort_wrapper(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_priority); /* proto */
+static PyObject *__pyx_pf_12peak_finding_9interface_2argsort_wrapper(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_priority); /* proto */
+static PyObject *__pyx_pf_12peak_finding_9interface_4find_peak(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_iterable, double __pyx_v_prominence, Py_ssize_t __pyx_v_distance); /* proto */
+static PyObject *__pyx_pf_12peak_finding_9interface_6find_peaks(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_iterable, double __pyx_v_prominence, Py_ssize_t __pyx_v_distance); /* proto */
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -3255,8 +3255,8 @@ static __pyx_mstatetype * const __pyx_mstate_global = &__pyx_mstate_global_stati
 #define __pyx_n_u_encode __pyx_string_tab[69]
 #define __pyx_n_u_enumerate __pyx_string_tab[70]
 #define __pyx_n_u_error __pyx_string_tab[71]
-#define __pyx_n_u_find_peak_wrapper __pyx_string_tab[72]
-#define __pyx_n_u_find_peaks_wrapper __pyx_string_tab[73]
+#define __pyx_n_u_find_peak __pyx_string_tab[72]
+#define __pyx_n_u_find_peaks __pyx_string_tab[73]
 #define __pyx_n_u_flags __pyx_string_tab[74]
 #define __pyx_n_u_format __pyx_string_tab[75]
 #define __pyx_n_u_fortran __pyx_string_tab[76]
@@ -17407,7 +17407,7 @@ static PyObject *__pyx_pf_12peak_finding_9interface_keep_func_wrapper(CYTHON_UNU
  * 
  *     return np.array([])             # <<<<<<<<<<<<<<
  * 
- * def find_peak_wrapper(iterable, double prominence, Py_ssize_t distance):
+ * 
 */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_12 = NULL;
@@ -17467,477 +17467,8 @@ static PyObject *__pyx_pf_12peak_finding_9interface_keep_func_wrapper(CYTHON_UNU
   return __pyx_r;
 }
 
-/* "peak_finding/interface.pyx":21
- *     return np.array([])
+/* "peak_finding/interface.pyx":22
  * 
- * def find_peak_wrapper(iterable, double prominence, Py_ssize_t distance):             # <<<<<<<<<<<<<<
- *     """Python wrapper to find_peaks for testing."""
- *     cdef double [:] x = iterable
-*/
-
-/* Python wrapper */
-static PyObject *__pyx_pw_12peak_finding_9interface_3find_peak_wrapper(PyObject *__pyx_self, 
-#if CYTHON_METH_FASTCALL
-PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
-#else
-PyObject *__pyx_args, PyObject *__pyx_kwds
-#endif
-); /*proto*/
-PyDoc_STRVAR(__pyx_doc_12peak_finding_9interface_2find_peak_wrapper, "Python wrapper to find_peaks for testing.");
-static PyMethodDef __pyx_mdef_12peak_finding_9interface_3find_peak_wrapper = {"find_peak_wrapper", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_12peak_finding_9interface_3find_peak_wrapper, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_12peak_finding_9interface_2find_peak_wrapper};
-static PyObject *__pyx_pw_12peak_finding_9interface_3find_peak_wrapper(PyObject *__pyx_self, 
-#if CYTHON_METH_FASTCALL
-PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
-#else
-PyObject *__pyx_args, PyObject *__pyx_kwds
-#endif
-) {
-  PyObject *__pyx_v_iterable = 0;
-  double __pyx_v_prominence;
-  Py_ssize_t __pyx_v_distance;
-  #if !CYTHON_METH_FASTCALL
-  CYTHON_UNUSED Py_ssize_t __pyx_nargs;
-  #endif
-  CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
-  PyObject* values[3] = {0,0,0};
-  int __pyx_lineno = 0;
-  const char *__pyx_filename = NULL;
-  int __pyx_clineno = 0;
-  PyObject *__pyx_r = 0;
-  __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("find_peak_wrapper (wrapper)", 0);
-  #if !CYTHON_METH_FASTCALL
-  #if CYTHON_ASSUME_SAFE_SIZE
-  __pyx_nargs = PyTuple_GET_SIZE(__pyx_args);
-  #else
-  __pyx_nargs = PyTuple_Size(__pyx_args); if (unlikely(__pyx_nargs < 0)) return NULL;
-  #endif
-  #endif
-  __pyx_kwvalues = __Pyx_KwValues_FASTCALL(__pyx_args, __pyx_nargs);
-  {
-    PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_iterable,&__pyx_mstate_global->__pyx_n_u_prominence,&__pyx_mstate_global->__pyx_n_u_distance,0};
-    const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 21, __pyx_L3_error)
-    if (__pyx_kwds_len > 0) {
-      switch (__pyx_nargs) {
-        case  3:
-        values[2] = __Pyx_ArgRef_FASTCALL(__pyx_args, 2);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 21, __pyx_L3_error)
-        CYTHON_FALLTHROUGH;
-        case  2:
-        values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 21, __pyx_L3_error)
-        CYTHON_FALLTHROUGH;
-        case  1:
-        values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 21, __pyx_L3_error)
-        CYTHON_FALLTHROUGH;
-        case  0: break;
-        default: goto __pyx_L5_argtuple_error;
-      }
-      const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "find_peak_wrapper", 0) < 0) __PYX_ERR(0, 21, __pyx_L3_error)
-      for (Py_ssize_t i = __pyx_nargs; i < 3; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("find_peak_wrapper", 1, 3, 3, i); __PYX_ERR(0, 21, __pyx_L3_error) }
-      }
-    } else if (unlikely(__pyx_nargs != 3)) {
-      goto __pyx_L5_argtuple_error;
-    } else {
-      values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 21, __pyx_L3_error)
-      values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 21, __pyx_L3_error)
-      values[2] = __Pyx_ArgRef_FASTCALL(__pyx_args, 2);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 21, __pyx_L3_error)
-    }
-    __pyx_v_iterable = values[0];
-    __pyx_v_prominence = __Pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_prominence == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 21, __pyx_L3_error)
-    __pyx_v_distance = __Pyx_PyIndex_AsSsize_t(values[2]); if (unlikely((__pyx_v_distance == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 21, __pyx_L3_error)
-  }
-  goto __pyx_L6_skip;
-  __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("find_peak_wrapper", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 21, __pyx_L3_error)
-  __pyx_L6_skip:;
-  goto __pyx_L4_argument_unpacking_done;
-  __pyx_L3_error:;
-  for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
-    Py_XDECREF(values[__pyx_temp]);
-  }
-  __Pyx_AddTraceback("peak_finding.interface.find_peak_wrapper", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __Pyx_RefNannyFinishContext();
-  return NULL;
-  __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_12peak_finding_9interface_2find_peak_wrapper(__pyx_self, __pyx_v_iterable, __pyx_v_prominence, __pyx_v_distance);
-
-  /* function exit code */
-  for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
-    Py_XDECREF(values[__pyx_temp]);
-  }
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-static PyObject *__pyx_pf_12peak_finding_9interface_2find_peak_wrapper(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_iterable, double __pyx_v_prominence, Py_ssize_t __pyx_v_distance) {
-  __Pyx_memviewslice __pyx_v_x = { 0, 0, { 0 }, { 0 }, { 0 } };
-  PyObject *__pyx_r = NULL;
-  __Pyx_RefNannyDeclarations
-  __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  Py_ssize_t __pyx_t_2;
-  int __pyx_t_3;
-  PyObject *__pyx_t_4 = NULL;
-  int __pyx_lineno = 0;
-  const char *__pyx_filename = NULL;
-  int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("find_peak_wrapper", 0);
-
-  /* "peak_finding/interface.pyx":23
- * def find_peak_wrapper(iterable, double prominence, Py_ssize_t distance):
- *     """Python wrapper to find_peaks for testing."""
- *     cdef double [:] x = iterable             # <<<<<<<<<<<<<<
- * 
- *     return find_peak(&x[0], prominence, distance, 400)
-*/
-  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_iterable, PyBUF_WRITABLE); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 23, __pyx_L1_error)
-  __pyx_v_x = __pyx_t_1;
-  __pyx_t_1.memview = NULL;
-  __pyx_t_1.data = NULL;
-
-  /* "peak_finding/interface.pyx":25
- *     cdef double [:] x = iterable
- * 
- *     return find_peak(&x[0], prominence, distance, 400)             # <<<<<<<<<<<<<<
- * 
- * def find_peaks_wrapper(iterable, double prominence, Py_ssize_t distance):
-*/
-  __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = 0;
-  __pyx_t_3 = -1;
-  if (__pyx_t_2 < 0) {
-    __pyx_t_2 += __pyx_v_x.shape[0];
-    if (unlikely(__pyx_t_2 < 0)) __pyx_t_3 = 0;
-  } else if (unlikely(__pyx_t_2 >= __pyx_v_x.shape[0])) __pyx_t_3 = 0;
-  if (unlikely(__pyx_t_3 != -1)) {
-    __Pyx_RaiseBufferIndexError(__pyx_t_3);
-    __PYX_ERR(0, 25, __pyx_L1_error)
-  }
-  __pyx_t_4 = PyLong_FromSsize_t(__pyx_f_12peak_finding_13_peak_finding_find_peak((&(*((double *) ( /* dim=0 */ (__pyx_v_x.data + __pyx_t_2 * __pyx_v_x.strides[0]) )))), __pyx_v_prominence, __pyx_v_distance, 0x190)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 25, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __pyx_r = __pyx_t_4;
-  __pyx_t_4 = 0;
-  goto __pyx_L0;
-
-  /* "peak_finding/interface.pyx":21
- *     return np.array([])
- * 
- * def find_peak_wrapper(iterable, double prominence, Py_ssize_t distance):             # <<<<<<<<<<<<<<
- *     """Python wrapper to find_peaks for testing."""
- *     cdef double [:] x = iterable
-*/
-
-  /* function exit code */
-  __pyx_L1_error:;
-  __PYX_XCLEAR_MEMVIEW(&__pyx_t_1, 1);
-  __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("peak_finding.interface.find_peak_wrapper", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __pyx_r = NULL;
-  __pyx_L0:;
-  __PYX_XCLEAR_MEMVIEW(&__pyx_v_x, 1);
-  __Pyx_XGIVEREF(__pyx_r);
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-/* "peak_finding/interface.pyx":27
- *     return find_peak(&x[0], prominence, distance, 400)
- * 
- * def find_peaks_wrapper(iterable, double prominence, Py_ssize_t distance):             # <<<<<<<<<<<<<<
- *     """Python wrapper to find_peaks for testing."""
- *     cdef double [:] x = iterable
-*/
-
-/* Python wrapper */
-static PyObject *__pyx_pw_12peak_finding_9interface_5find_peaks_wrapper(PyObject *__pyx_self, 
-#if CYTHON_METH_FASTCALL
-PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
-#else
-PyObject *__pyx_args, PyObject *__pyx_kwds
-#endif
-); /*proto*/
-PyDoc_STRVAR(__pyx_doc_12peak_finding_9interface_4find_peaks_wrapper, "Python wrapper to find_peaks for testing.");
-static PyMethodDef __pyx_mdef_12peak_finding_9interface_5find_peaks_wrapper = {"find_peaks_wrapper", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_12peak_finding_9interface_5find_peaks_wrapper, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_12peak_finding_9interface_4find_peaks_wrapper};
-static PyObject *__pyx_pw_12peak_finding_9interface_5find_peaks_wrapper(PyObject *__pyx_self, 
-#if CYTHON_METH_FASTCALL
-PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
-#else
-PyObject *__pyx_args, PyObject *__pyx_kwds
-#endif
-) {
-  PyObject *__pyx_v_iterable = 0;
-  double __pyx_v_prominence;
-  Py_ssize_t __pyx_v_distance;
-  #if !CYTHON_METH_FASTCALL
-  CYTHON_UNUSED Py_ssize_t __pyx_nargs;
-  #endif
-  CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
-  PyObject* values[3] = {0,0,0};
-  int __pyx_lineno = 0;
-  const char *__pyx_filename = NULL;
-  int __pyx_clineno = 0;
-  PyObject *__pyx_r = 0;
-  __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("find_peaks_wrapper (wrapper)", 0);
-  #if !CYTHON_METH_FASTCALL
-  #if CYTHON_ASSUME_SAFE_SIZE
-  __pyx_nargs = PyTuple_GET_SIZE(__pyx_args);
-  #else
-  __pyx_nargs = PyTuple_Size(__pyx_args); if (unlikely(__pyx_nargs < 0)) return NULL;
-  #endif
-  #endif
-  __pyx_kwvalues = __Pyx_KwValues_FASTCALL(__pyx_args, __pyx_nargs);
-  {
-    PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_iterable,&__pyx_mstate_global->__pyx_n_u_prominence,&__pyx_mstate_global->__pyx_n_u_distance,0};
-    const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 27, __pyx_L3_error)
-    if (__pyx_kwds_len > 0) {
-      switch (__pyx_nargs) {
-        case  3:
-        values[2] = __Pyx_ArgRef_FASTCALL(__pyx_args, 2);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 27, __pyx_L3_error)
-        CYTHON_FALLTHROUGH;
-        case  2:
-        values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 27, __pyx_L3_error)
-        CYTHON_FALLTHROUGH;
-        case  1:
-        values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 27, __pyx_L3_error)
-        CYTHON_FALLTHROUGH;
-        case  0: break;
-        default: goto __pyx_L5_argtuple_error;
-      }
-      const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "find_peaks_wrapper", 0) < 0) __PYX_ERR(0, 27, __pyx_L3_error)
-      for (Py_ssize_t i = __pyx_nargs; i < 3; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("find_peaks_wrapper", 1, 3, 3, i); __PYX_ERR(0, 27, __pyx_L3_error) }
-      }
-    } else if (unlikely(__pyx_nargs != 3)) {
-      goto __pyx_L5_argtuple_error;
-    } else {
-      values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 27, __pyx_L3_error)
-      values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 27, __pyx_L3_error)
-      values[2] = __Pyx_ArgRef_FASTCALL(__pyx_args, 2);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 27, __pyx_L3_error)
-    }
-    __pyx_v_iterable = values[0];
-    __pyx_v_prominence = __Pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_prominence == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 27, __pyx_L3_error)
-    __pyx_v_distance = __Pyx_PyIndex_AsSsize_t(values[2]); if (unlikely((__pyx_v_distance == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 27, __pyx_L3_error)
-  }
-  goto __pyx_L6_skip;
-  __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("find_peaks_wrapper", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 27, __pyx_L3_error)
-  __pyx_L6_skip:;
-  goto __pyx_L4_argument_unpacking_done;
-  __pyx_L3_error:;
-  for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
-    Py_XDECREF(values[__pyx_temp]);
-  }
-  __Pyx_AddTraceback("peak_finding.interface.find_peaks_wrapper", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __Pyx_RefNannyFinishContext();
-  return NULL;
-  __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_12peak_finding_9interface_4find_peaks_wrapper(__pyx_self, __pyx_v_iterable, __pyx_v_prominence, __pyx_v_distance);
-
-  /* function exit code */
-  for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
-    Py_XDECREF(values[__pyx_temp]);
-  }
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-static PyObject *__pyx_pf_12peak_finding_9interface_4find_peaks_wrapper(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_iterable, double __pyx_v_prominence, Py_ssize_t __pyx_v_distance) {
-  __Pyx_memviewslice __pyx_v_x = { 0, 0, { 0 }, { 0 }, { 0 } };
-  struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_v_darr;
-  __Pyx_memviewslice __pyx_v_darr_view = { 0, 0, { 0 }, { 0 }, { 0 } };
-  PyObject *__pyx_v_res = NULL;
-  PyObject *__pyx_r = NULL;
-  __Pyx_RefNannyDeclarations
-  __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  Py_ssize_t __pyx_t_2;
-  int __pyx_t_3;
-  PyObject *__pyx_t_4 = NULL;
-  Py_ssize_t __pyx_t_5;
-  Py_ssize_t *__pyx_t_6;
-  struct __pyx_array_obj *__pyx_t_7 = NULL;
-  PyObject *__pyx_t_8 = NULL;
-  char *__pyx_t_9;
-  __Pyx_memviewslice __pyx_t_10 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  PyObject *__pyx_t_11 = NULL;
-  PyObject *__pyx_t_12 = NULL;
-  size_t __pyx_t_13;
-  int __pyx_lineno = 0;
-  const char *__pyx_filename = NULL;
-  int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("find_peaks_wrapper", 0);
-
-  /* "peak_finding/interface.pyx":29
- * def find_peaks_wrapper(iterable, double prominence, Py_ssize_t distance):
- *     """Python wrapper to find_peaks for testing."""
- *     cdef double [:] x = iterable             # <<<<<<<<<<<<<<
- *     cdef dynamic_arr darr = find_peaks(&x[0], prominence, distance, iterable.size)
- * 
-*/
-  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_iterable, PyBUF_WRITABLE); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_v_x = __pyx_t_1;
-  __pyx_t_1.memview = NULL;
-  __pyx_t_1.data = NULL;
-
-  /* "peak_finding/interface.pyx":30
- *     """Python wrapper to find_peaks for testing."""
- *     cdef double [:] x = iterable
- *     cdef dynamic_arr darr = find_peaks(&x[0], prominence, distance, iterable.size)             # <<<<<<<<<<<<<<
- * 
- *     cdef Py_ssize_t [:] darr_view = <Py_ssize_t[:darr.size]> darr.arr # type: ignore
-*/
-  __pyx_t_2 = 0;
-  __pyx_t_3 = -1;
-  if (__pyx_t_2 < 0) {
-    __pyx_t_2 += __pyx_v_x.shape[0];
-    if (unlikely(__pyx_t_2 < 0)) __pyx_t_3 = 0;
-  } else if (unlikely(__pyx_t_2 >= __pyx_v_x.shape[0])) __pyx_t_3 = 0;
-  if (unlikely(__pyx_t_3 != -1)) {
-    __Pyx_RaiseBufferIndexError(__pyx_t_3);
-    __PYX_ERR(0, 30, __pyx_L1_error)
-  }
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_iterable, __pyx_mstate_global->__pyx_n_u_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 30, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_4); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 30, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_v_darr = __pyx_f_12peak_finding_13_peak_finding_find_peaks((&(*((double *) ( /* dim=0 */ (__pyx_v_x.data + __pyx_t_2 * __pyx_v_x.strides[0]) )))), __pyx_v_prominence, __pyx_v_distance, __pyx_t_5);
-
-  /* "peak_finding/interface.pyx":32
- *     cdef dynamic_arr darr = find_peaks(&x[0], prominence, distance, iterable.size)
- * 
- *     cdef Py_ssize_t [:] darr_view = <Py_ssize_t[:darr.size]> darr.arr # type: ignore             # <<<<<<<<<<<<<<
- *     res = np.array(darr_view)
- * 
-*/
-  __pyx_t_6 = __pyx_v_darr.arr;
-  if (!__pyx_t_6) {
-    PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(0, 32, __pyx_L1_error)
-  }
-  __pyx_t_8 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_Py_ssize_t); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 32, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_4 = Py_BuildValue("("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_v_darr.size)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 32, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  #if CYTHON_COMPILING_IN_LIMITED_API
-  __pyx_t_9 = PyBytes_AsString(__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 32, __pyx_L1_error)
-  #else
-  __pyx_t_9 = PyBytes_AS_STRING(__pyx_t_8);
-  #endif
-  __pyx_t_7 = __pyx_array_new(__pyx_t_4, sizeof(Py_ssize_t), __pyx_t_9, "c", (char *) __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 32, __pyx_L1_error)
-  __Pyx_GOTREF((PyObject *)__pyx_t_7);
-  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_10 = __Pyx_PyObject_to_MemoryviewSlice_ds_Py_ssize_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_10.memview)) __PYX_ERR(0, 32, __pyx_L1_error)
-  __Pyx_DECREF((PyObject *)__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_v_darr_view = __pyx_t_10;
-  __pyx_t_10.memview = NULL;
-  __pyx_t_10.data = NULL;
-
-  /* "peak_finding/interface.pyx":33
- * 
- *     cdef Py_ssize_t [:] darr_view = <Py_ssize_t[:darr.size]> darr.arr # type: ignore
- *     res = np.array(darr_view)             # <<<<<<<<<<<<<<
- * 
- *     free(darr.arr)
-*/
-  __pyx_t_4 = NULL;
-  __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_mstate_global->__pyx_n_u_np); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 33, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_11);
-  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_mstate_global->__pyx_n_u_array); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 33, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_12);
-  __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-  __pyx_t_11 = __pyx_memoryview_fromslice(__pyx_v_darr_view, 1, (PyObject *(*)(char *)) __pyx_memview_get_Py_ssize_t, (int (*)(char *, PyObject *)) __pyx_memview_set_Py_ssize_t, 0);; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 33, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_11);
-  __pyx_t_13 = 1;
-  #if CYTHON_UNPACK_METHODS
-  if (unlikely(PyMethod_Check(__pyx_t_12))) {
-    __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_12);
-    assert(__pyx_t_4);
-    PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_12);
-    __Pyx_INCREF(__pyx_t_4);
-    __Pyx_INCREF(__pyx__function);
-    __Pyx_DECREF_SET(__pyx_t_12, __pyx__function);
-    __pyx_t_13 = 0;
-  }
-  #endif
-  {
-    PyObject *__pyx_callargs[2] = {__pyx_t_4, __pyx_t_11};
-    __pyx_t_8 = __Pyx_PyObject_FastCall(__pyx_t_12, __pyx_callargs+__pyx_t_13, (2-__pyx_t_13) | (__pyx_t_13*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
-    __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-    __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 33, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_8);
-  }
-  __pyx_v_res = __pyx_t_8;
-  __pyx_t_8 = 0;
-
-  /* "peak_finding/interface.pyx":35
- *     res = np.array(darr_view)
- * 
- *     free(darr.arr)             # <<<<<<<<<<<<<<
- *     return res
- * 
-*/
-  free(__pyx_v_darr.arr);
-
-  /* "peak_finding/interface.pyx":36
- * 
- *     free(darr.arr)
- *     return res             # <<<<<<<<<<<<<<
- * 
- * def argsort_wrapper(const double[::1] priority):
-*/
-  __Pyx_XDECREF(__pyx_r);
-  __Pyx_INCREF(__pyx_v_res);
-  __pyx_r = __pyx_v_res;
-  goto __pyx_L0;
-
-  /* "peak_finding/interface.pyx":27
- *     return find_peak(&x[0], prominence, distance, 400)
- * 
- * def find_peaks_wrapper(iterable, double prominence, Py_ssize_t distance):             # <<<<<<<<<<<<<<
- *     """Python wrapper to find_peaks for testing."""
- *     cdef double [:] x = iterable
-*/
-
-  /* function exit code */
-  __pyx_L1_error:;
-  __PYX_XCLEAR_MEMVIEW(&__pyx_t_1, 1);
-  __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_XDECREF((PyObject *)__pyx_t_7);
-  __Pyx_XDECREF(__pyx_t_8);
-  __PYX_XCLEAR_MEMVIEW(&__pyx_t_10, 1);
-  __Pyx_XDECREF(__pyx_t_11);
-  __Pyx_XDECREF(__pyx_t_12);
-  __Pyx_AddTraceback("peak_finding.interface.find_peaks_wrapper", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __pyx_r = NULL;
-  __pyx_L0:;
-  __PYX_XCLEAR_MEMVIEW(&__pyx_v_x, 1);
-  __PYX_XCLEAR_MEMVIEW(&__pyx_v_darr_view, 1);
-  __Pyx_XDECREF(__pyx_v_res);
-  __Pyx_XGIVEREF(__pyx_r);
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-/* "peak_finding/interface.pyx":38
- *     return res
  * 
  * def argsort_wrapper(const double[::1] priority):             # <<<<<<<<<<<<<<
  *     """Wraps the C function `argsort` for use in Python (testing)."""
@@ -17945,16 +17476,16 @@ static PyObject *__pyx_pf_12peak_finding_9interface_4find_peaks_wrapper(CYTHON_U
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12peak_finding_9interface_7argsort_wrapper(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_12peak_finding_9interface_3argsort_wrapper(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_12peak_finding_9interface_6argsort_wrapper, "Wraps the C function `argsort` for use in Python (testing).");
-static PyMethodDef __pyx_mdef_12peak_finding_9interface_7argsort_wrapper = {"argsort_wrapper", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_12peak_finding_9interface_7argsort_wrapper, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_12peak_finding_9interface_6argsort_wrapper};
-static PyObject *__pyx_pw_12peak_finding_9interface_7argsort_wrapper(PyObject *__pyx_self, 
+PyDoc_STRVAR(__pyx_doc_12peak_finding_9interface_2argsort_wrapper, "Wraps the C function `argsort` for use in Python (testing).");
+static PyMethodDef __pyx_mdef_12peak_finding_9interface_3argsort_wrapper = {"argsort_wrapper", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_12peak_finding_9interface_3argsort_wrapper, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_12peak_finding_9interface_2argsort_wrapper};
+static PyObject *__pyx_pw_12peak_finding_9interface_3argsort_wrapper(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -17984,32 +17515,32 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   {
     PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_priority,0};
     const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
-    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 38, __pyx_L3_error)
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 22, __pyx_L3_error)
     if (__pyx_kwds_len > 0) {
       switch (__pyx_nargs) {
         case  1:
         values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 38, __pyx_L3_error)
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 22, __pyx_L3_error)
         CYTHON_FALLTHROUGH;
         case  0: break;
         default: goto __pyx_L5_argtuple_error;
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
-      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "argsort_wrapper", 0) < 0) __PYX_ERR(0, 38, __pyx_L3_error)
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "argsort_wrapper", 0) < 0) __PYX_ERR(0, 22, __pyx_L3_error)
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
-        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("argsort_wrapper", 1, 1, 1, i); __PYX_ERR(0, 38, __pyx_L3_error) }
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("argsort_wrapper", 1, 1, 1, i); __PYX_ERR(0, 22, __pyx_L3_error) }
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
-      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 38, __pyx_L3_error)
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 22, __pyx_L3_error)
     }
-    __pyx_v_priority = __Pyx_PyObject_to_MemoryviewSlice_dc_double__const__(values[0], 0); if (unlikely(!__pyx_v_priority.memview)) __PYX_ERR(0, 38, __pyx_L3_error)
+    __pyx_v_priority = __Pyx_PyObject_to_MemoryviewSlice_dc_double__const__(values[0], 0); if (unlikely(!__pyx_v_priority.memview)) __PYX_ERR(0, 22, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("argsort_wrapper", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 38, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("argsort_wrapper", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 22, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -18021,7 +17552,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_12peak_finding_9interface_6argsort_wrapper(__pyx_self, __pyx_v_priority);
+  __pyx_r = __pyx_pf_12peak_finding_9interface_2argsort_wrapper(__pyx_self, __pyx_v_priority);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -18032,7 +17563,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12peak_finding_9interface_6argsort_wrapper(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_priority) {
+static PyObject *__pyx_pf_12peak_finding_9interface_2argsort_wrapper(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_priority) {
   struct __pyx_array_obj *__pyx_v_arg_view = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -18052,11 +17583,12 @@ static PyObject *__pyx_pf_12peak_finding_9interface_6argsort_wrapper(CYTHON_UNUS
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("argsort_wrapper", 0);
 
-  /* "peak_finding/interface.pyx":40
+  /* "peak_finding/interface.pyx":24
  * def argsort_wrapper(const double[::1] priority):
  *     """Wraps the C function `argsort` for use in Python (testing)."""
  *     arg_view = <Py_ssize_t[:len(priority)]> argsort(&priority[0], priority.size) #type: ignore             # <<<<<<<<<<<<<<
  *     return np.array(arg_view)
+ * 
 */
   __pyx_t_1 = 0;
   __pyx_t_2 = -1;
@@ -18066,48 +17598,50 @@ static PyObject *__pyx_pf_12peak_finding_9interface_6argsort_wrapper(CYTHON_UNUS
   } else if (unlikely(__pyx_t_1 >= __pyx_v_priority.shape[0])) __pyx_t_2 = 0;
   if (unlikely(__pyx_t_2 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_2);
-    __PYX_ERR(0, 40, __pyx_L1_error)
+    __PYX_ERR(0, 24, __pyx_L1_error)
   }
-  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_priority, 1, (PyObject *(*)(char *)) __pyx_memview_get_double__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_priority, 1, (PyObject *(*)(char *)) __pyx_memview_get_double__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_mstate_global->__pyx_n_u_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_mstate_global->__pyx_n_u_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_4); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_4); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_6 = __pyx_f_12peak_finding_19_peak_finding_utils_argsort((&(*((double const  *) ( /* dim=0 */ ((char *) (((double const  *) __pyx_v_priority.data) + __pyx_t_1)) )))), __pyx_t_5);
-  if (unlikely(!__pyx_v_priority.memview)) { __Pyx_RaiseUnboundLocalError("priority"); __PYX_ERR(0, 40, __pyx_L1_error) }
+  if (unlikely(!__pyx_v_priority.memview)) { __Pyx_RaiseUnboundLocalError("priority"); __PYX_ERR(0, 24, __pyx_L1_error) }
   __pyx_t_5 = __Pyx_MemoryView_Len(__pyx_v_priority); 
   if (!__pyx_t_6) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(0, 40, __pyx_L1_error)
+    __PYX_ERR(0, 24, __pyx_L1_error)
   }
-  __pyx_t_3 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_Py_ssize_t); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_3 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_Py_ssize_t); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = Py_BuildValue("("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_t_5)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_4 = Py_BuildValue("("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_t_5)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   #if CYTHON_COMPILING_IN_LIMITED_API
-  __pyx_t_8 = PyBytes_AsString(__pyx_t_3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_8 = PyBytes_AsString(__pyx_t_3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 24, __pyx_L1_error)
   #else
   __pyx_t_8 = PyBytes_AS_STRING(__pyx_t_3);
   #endif
-  __pyx_t_7 = __pyx_array_new(__pyx_t_4, sizeof(Py_ssize_t), __pyx_t_8, "c", (char *) __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_7 = __pyx_array_new(__pyx_t_4, sizeof(Py_ssize_t), __pyx_t_8, "c", (char *) __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_GOTREF((PyObject *)__pyx_t_7);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_arg_view = ((struct __pyx_array_obj *)__pyx_t_7);
   __pyx_t_7 = 0;
 
-  /* "peak_finding/interface.pyx":41
+  /* "peak_finding/interface.pyx":25
  *     """Wraps the C function `argsort` for use in Python (testing)."""
  *     arg_view = <Py_ssize_t[:len(priority)]> argsort(&priority[0], priority.size) #type: ignore
  *     return np.array(arg_view)             # <<<<<<<<<<<<<<
+ * 
+ * 
 */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_4 = NULL;
-  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_mstate_global->__pyx_n_u_np); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_mstate_global->__pyx_n_u_np); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_mstate_global->__pyx_n_u_array); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_mstate_global->__pyx_n_u_array); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __pyx_t_11 = 1;
@@ -18127,15 +17661,15 @@ static PyObject *__pyx_pf_12peak_finding_9interface_6argsort_wrapper(CYTHON_UNUS
     __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_10, __pyx_callargs+__pyx_t_11, (2-__pyx_t_11) | (__pyx_t_11*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 25, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
   }
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "peak_finding/interface.pyx":38
- *     return res
+  /* "peak_finding/interface.pyx":22
+ * 
  * 
  * def argsort_wrapper(const double[::1] priority):             # <<<<<<<<<<<<<<
  *     """Wraps the C function `argsort` for use in Python (testing)."""
@@ -18153,6 +17687,472 @@ static PyObject *__pyx_pf_12peak_finding_9interface_6argsort_wrapper(CYTHON_UNUS
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF((PyObject *)__pyx_v_arg_view);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "peak_finding/interface.pyx":28
+ * 
+ * 
+ * def find_peak(iterable, double prominence, Py_ssize_t distance):             # <<<<<<<<<<<<<<
+ *     """Python wrapper to _find_peak."""
+ *     cdef double [:] x = iterable
+*/
+
+/* Python wrapper */
+static PyObject *__pyx_pw_12peak_finding_9interface_5find_peak(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+); /*proto*/
+PyDoc_STRVAR(__pyx_doc_12peak_finding_9interface_4find_peak, "Python wrapper to _find_peak.");
+static PyMethodDef __pyx_mdef_12peak_finding_9interface_5find_peak = {"find_peak", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_12peak_finding_9interface_5find_peak, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_12peak_finding_9interface_4find_peak};
+static PyObject *__pyx_pw_12peak_finding_9interface_5find_peak(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+) {
+  PyObject *__pyx_v_iterable = 0;
+  double __pyx_v_prominence;
+  Py_ssize_t __pyx_v_distance;
+  #if !CYTHON_METH_FASTCALL
+  CYTHON_UNUSED Py_ssize_t __pyx_nargs;
+  #endif
+  CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
+  PyObject* values[3] = {0,0,0};
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("find_peak (wrapper)", 0);
+  #if !CYTHON_METH_FASTCALL
+  #if CYTHON_ASSUME_SAFE_SIZE
+  __pyx_nargs = PyTuple_GET_SIZE(__pyx_args);
+  #else
+  __pyx_nargs = PyTuple_Size(__pyx_args); if (unlikely(__pyx_nargs < 0)) return NULL;
+  #endif
+  #endif
+  __pyx_kwvalues = __Pyx_KwValues_FASTCALL(__pyx_args, __pyx_nargs);
+  {
+    PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_iterable,&__pyx_mstate_global->__pyx_n_u_prominence,&__pyx_mstate_global->__pyx_n_u_distance,0};
+    const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 28, __pyx_L3_error)
+    if (__pyx_kwds_len > 0) {
+      switch (__pyx_nargs) {
+        case  3:
+        values[2] = __Pyx_ArgRef_FASTCALL(__pyx_args, 2);
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 28, __pyx_L3_error)
+        CYTHON_FALLTHROUGH;
+        case  2:
+        values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 28, __pyx_L3_error)
+        CYTHON_FALLTHROUGH;
+        case  1:
+        values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 28, __pyx_L3_error)
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      const Py_ssize_t kwd_pos_args = __pyx_nargs;
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "find_peak", 0) < 0) __PYX_ERR(0, 28, __pyx_L3_error)
+      for (Py_ssize_t i = __pyx_nargs; i < 3; i++) {
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("find_peak", 1, 3, 3, i); __PYX_ERR(0, 28, __pyx_L3_error) }
+      }
+    } else if (unlikely(__pyx_nargs != 3)) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 28, __pyx_L3_error)
+      values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 28, __pyx_L3_error)
+      values[2] = __Pyx_ArgRef_FASTCALL(__pyx_args, 2);
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 28, __pyx_L3_error)
+    }
+    __pyx_v_iterable = values[0];
+    __pyx_v_prominence = __Pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_prominence == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 28, __pyx_L3_error)
+    __pyx_v_distance = __Pyx_PyIndex_AsSsize_t(values[2]); if (unlikely((__pyx_v_distance == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 28, __pyx_L3_error)
+  }
+  goto __pyx_L6_skip;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("find_peak", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 28, __pyx_L3_error)
+  __pyx_L6_skip:;
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L3_error:;
+  for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+    Py_XDECREF(values[__pyx_temp]);
+  }
+  __Pyx_AddTraceback("peak_finding.interface.find_peak", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_12peak_finding_9interface_4find_peak(__pyx_self, __pyx_v_iterable, __pyx_v_prominence, __pyx_v_distance);
+
+  /* function exit code */
+  for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+    Py_XDECREF(values[__pyx_temp]);
+  }
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_12peak_finding_9interface_4find_peak(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_iterable, double __pyx_v_prominence, Py_ssize_t __pyx_v_distance) {
+  __Pyx_memviewslice __pyx_v_x = { 0, 0, { 0 }, { 0 }, { 0 } };
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
+  Py_ssize_t __pyx_t_2;
+  int __pyx_t_3;
+  PyObject *__pyx_t_4 = NULL;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("find_peak", 0);
+
+  /* "peak_finding/interface.pyx":30
+ * def find_peak(iterable, double prominence, Py_ssize_t distance):
+ *     """Python wrapper to _find_peak."""
+ *     cdef double [:] x = iterable             # <<<<<<<<<<<<<<
+ * 
+ *     return _find_peak(&x[0], prominence, distance, 400)
+*/
+  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_iterable, PyBUF_WRITABLE); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_v_x = __pyx_t_1;
+  __pyx_t_1.memview = NULL;
+  __pyx_t_1.data = NULL;
+
+  /* "peak_finding/interface.pyx":32
+ *     cdef double [:] x = iterable
+ * 
+ *     return _find_peak(&x[0], prominence, distance, 400)             # <<<<<<<<<<<<<<
+ * 
+ * 
+*/
+  __Pyx_XDECREF(__pyx_r);
+  __pyx_t_2 = 0;
+  __pyx_t_3 = -1;
+  if (__pyx_t_2 < 0) {
+    __pyx_t_2 += __pyx_v_x.shape[0];
+    if (unlikely(__pyx_t_2 < 0)) __pyx_t_3 = 0;
+  } else if (unlikely(__pyx_t_2 >= __pyx_v_x.shape[0])) __pyx_t_3 = 0;
+  if (unlikely(__pyx_t_3 != -1)) {
+    __Pyx_RaiseBufferIndexError(__pyx_t_3);
+    __PYX_ERR(0, 32, __pyx_L1_error)
+  }
+  __pyx_t_4 = PyLong_FromSsize_t(__pyx_f_12peak_finding_13_peak_finding__find_peak((&(*((double *) ( /* dim=0 */ (__pyx_v_x.data + __pyx_t_2 * __pyx_v_x.strides[0]) )))), __pyx_v_prominence, __pyx_v_distance, 0x190)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_r = __pyx_t_4;
+  __pyx_t_4 = 0;
+  goto __pyx_L0;
+
+  /* "peak_finding/interface.pyx":28
+ * 
+ * 
+ * def find_peak(iterable, double prominence, Py_ssize_t distance):             # <<<<<<<<<<<<<<
+ *     """Python wrapper to _find_peak."""
+ *     cdef double [:] x = iterable
+*/
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __PYX_XCLEAR_MEMVIEW(&__pyx_t_1, 1);
+  __Pyx_XDECREF(__pyx_t_4);
+  __Pyx_AddTraceback("peak_finding.interface.find_peak", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __PYX_XCLEAR_MEMVIEW(&__pyx_v_x, 1);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "peak_finding/interface.pyx":35
+ * 
+ * 
+ * def find_peaks(iterable, double prominence, Py_ssize_t distance):             # <<<<<<<<<<<<<<
+ *     """Python wrapper to _find_peaks."""
+ *     cdef double [:] x = iterable
+*/
+
+/* Python wrapper */
+static PyObject *__pyx_pw_12peak_finding_9interface_7find_peaks(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+); /*proto*/
+PyDoc_STRVAR(__pyx_doc_12peak_finding_9interface_6find_peaks, "Python wrapper to _find_peaks.");
+static PyMethodDef __pyx_mdef_12peak_finding_9interface_7find_peaks = {"find_peaks", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_12peak_finding_9interface_7find_peaks, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_12peak_finding_9interface_6find_peaks};
+static PyObject *__pyx_pw_12peak_finding_9interface_7find_peaks(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+) {
+  PyObject *__pyx_v_iterable = 0;
+  double __pyx_v_prominence;
+  Py_ssize_t __pyx_v_distance;
+  #if !CYTHON_METH_FASTCALL
+  CYTHON_UNUSED Py_ssize_t __pyx_nargs;
+  #endif
+  CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
+  PyObject* values[3] = {0,0,0};
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("find_peaks (wrapper)", 0);
+  #if !CYTHON_METH_FASTCALL
+  #if CYTHON_ASSUME_SAFE_SIZE
+  __pyx_nargs = PyTuple_GET_SIZE(__pyx_args);
+  #else
+  __pyx_nargs = PyTuple_Size(__pyx_args); if (unlikely(__pyx_nargs < 0)) return NULL;
+  #endif
+  #endif
+  __pyx_kwvalues = __Pyx_KwValues_FASTCALL(__pyx_args, __pyx_nargs);
+  {
+    PyObject ** const __pyx_pyargnames[] = {&__pyx_mstate_global->__pyx_n_u_iterable,&__pyx_mstate_global->__pyx_n_u_prominence,&__pyx_mstate_global->__pyx_n_u_distance,0};
+    const Py_ssize_t __pyx_kwds_len = (__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
+    if (unlikely(__pyx_kwds_len) < 0) __PYX_ERR(0, 35, __pyx_L3_error)
+    if (__pyx_kwds_len > 0) {
+      switch (__pyx_nargs) {
+        case  3:
+        values[2] = __Pyx_ArgRef_FASTCALL(__pyx_args, 2);
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 35, __pyx_L3_error)
+        CYTHON_FALLTHROUGH;
+        case  2:
+        values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 35, __pyx_L3_error)
+        CYTHON_FALLTHROUGH;
+        case  1:
+        values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
+        if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 35, __pyx_L3_error)
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      const Py_ssize_t kwd_pos_args = __pyx_nargs;
+      if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "find_peaks", 0) < 0) __PYX_ERR(0, 35, __pyx_L3_error)
+      for (Py_ssize_t i = __pyx_nargs; i < 3; i++) {
+        if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("find_peaks", 1, 3, 3, i); __PYX_ERR(0, 35, __pyx_L3_error) }
+      }
+    } else if (unlikely(__pyx_nargs != 3)) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = __Pyx_ArgRef_FASTCALL(__pyx_args, 0);
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[0])) __PYX_ERR(0, 35, __pyx_L3_error)
+      values[1] = __Pyx_ArgRef_FASTCALL(__pyx_args, 1);
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[1])) __PYX_ERR(0, 35, __pyx_L3_error)
+      values[2] = __Pyx_ArgRef_FASTCALL(__pyx_args, 2);
+      if (!CYTHON_ASSUME_SAFE_MACROS && unlikely(!values[2])) __PYX_ERR(0, 35, __pyx_L3_error)
+    }
+    __pyx_v_iterable = values[0];
+    __pyx_v_prominence = __Pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_prominence == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 35, __pyx_L3_error)
+    __pyx_v_distance = __Pyx_PyIndex_AsSsize_t(values[2]); if (unlikely((__pyx_v_distance == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 35, __pyx_L3_error)
+  }
+  goto __pyx_L6_skip;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("find_peaks", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 35, __pyx_L3_error)
+  __pyx_L6_skip:;
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L3_error:;
+  for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+    Py_XDECREF(values[__pyx_temp]);
+  }
+  __Pyx_AddTraceback("peak_finding.interface.find_peaks", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_12peak_finding_9interface_6find_peaks(__pyx_self, __pyx_v_iterable, __pyx_v_prominence, __pyx_v_distance);
+
+  /* function exit code */
+  for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+    Py_XDECREF(values[__pyx_temp]);
+  }
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_12peak_finding_9interface_6find_peaks(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_iterable, double __pyx_v_prominence, Py_ssize_t __pyx_v_distance) {
+  __Pyx_memviewslice __pyx_v_x = { 0, 0, { 0 }, { 0 }, { 0 } };
+  struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_v_darr;
+  __Pyx_memviewslice __pyx_v_darr_view = { 0, 0, { 0 }, { 0 }, { 0 } };
+  PyObject *__pyx_v_res = NULL;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
+  Py_ssize_t __pyx_t_2;
+  int __pyx_t_3;
+  PyObject *__pyx_t_4 = NULL;
+  Py_ssize_t __pyx_t_5;
+  Py_ssize_t *__pyx_t_6;
+  struct __pyx_array_obj *__pyx_t_7 = NULL;
+  PyObject *__pyx_t_8 = NULL;
+  char *__pyx_t_9;
+  __Pyx_memviewslice __pyx_t_10 = { 0, 0, { 0 }, { 0 }, { 0 } };
+  PyObject *__pyx_t_11 = NULL;
+  PyObject *__pyx_t_12 = NULL;
+  size_t __pyx_t_13;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("find_peaks", 0);
+
+  /* "peak_finding/interface.pyx":37
+ * def find_peaks(iterable, double prominence, Py_ssize_t distance):
+ *     """Python wrapper to _find_peaks."""
+ *     cdef double [:] x = iterable             # <<<<<<<<<<<<<<
+ *     cdef dynamic_arr darr = _find_peaks(&x[0], prominence, distance, iterable.size)
+ * 
+*/
+  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_iterable, PyBUF_WRITABLE); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_v_x = __pyx_t_1;
+  __pyx_t_1.memview = NULL;
+  __pyx_t_1.data = NULL;
+
+  /* "peak_finding/interface.pyx":38
+ *     """Python wrapper to _find_peaks."""
+ *     cdef double [:] x = iterable
+ *     cdef dynamic_arr darr = _find_peaks(&x[0], prominence, distance, iterable.size)             # <<<<<<<<<<<<<<
+ * 
+ *     cdef Py_ssize_t [:] darr_view = <Py_ssize_t[:darr.size]> darr.arr # type: ignore
+*/
+  __pyx_t_2 = 0;
+  __pyx_t_3 = -1;
+  if (__pyx_t_2 < 0) {
+    __pyx_t_2 += __pyx_v_x.shape[0];
+    if (unlikely(__pyx_t_2 < 0)) __pyx_t_3 = 0;
+  } else if (unlikely(__pyx_t_2 >= __pyx_v_x.shape[0])) __pyx_t_3 = 0;
+  if (unlikely(__pyx_t_3 != -1)) {
+    __Pyx_RaiseBufferIndexError(__pyx_t_3);
+    __PYX_ERR(0, 38, __pyx_L1_error)
+  }
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_iterable, __pyx_mstate_global->__pyx_n_u_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_t_4); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 38, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __pyx_v_darr = __pyx_f_12peak_finding_13_peak_finding__find_peaks((&(*((double *) ( /* dim=0 */ (__pyx_v_x.data + __pyx_t_2 * __pyx_v_x.strides[0]) )))), __pyx_v_prominence, __pyx_v_distance, __pyx_t_5);
+
+  /* "peak_finding/interface.pyx":40
+ *     cdef dynamic_arr darr = _find_peaks(&x[0], prominence, distance, iterable.size)
+ * 
+ *     cdef Py_ssize_t [:] darr_view = <Py_ssize_t[:darr.size]> darr.arr # type: ignore             # <<<<<<<<<<<<<<
+ *     res = np.array(darr_view)
+ * 
+*/
+  __pyx_t_6 = __pyx_v_darr.arr;
+  if (!__pyx_t_6) {
+    PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
+    __PYX_ERR(0, 40, __pyx_L1_error)
+  }
+  __pyx_t_8 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_Py_ssize_t); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_8);
+  __pyx_t_4 = Py_BuildValue("("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_v_darr.size)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  #if CYTHON_COMPILING_IN_LIMITED_API
+  __pyx_t_9 = PyBytes_AsString(__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 40, __pyx_L1_error)
+  #else
+  __pyx_t_9 = PyBytes_AS_STRING(__pyx_t_8);
+  #endif
+  __pyx_t_7 = __pyx_array_new(__pyx_t_4, sizeof(Py_ssize_t), __pyx_t_9, "c", (char *) __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __Pyx_GOTREF((PyObject *)__pyx_t_7);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+  __pyx_t_10 = __Pyx_PyObject_to_MemoryviewSlice_ds_Py_ssize_t(((PyObject *)__pyx_t_7), PyBUF_WRITABLE); if (unlikely(!__pyx_t_10.memview)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __Pyx_DECREF((PyObject *)__pyx_t_7); __pyx_t_7 = 0;
+  __pyx_v_darr_view = __pyx_t_10;
+  __pyx_t_10.memview = NULL;
+  __pyx_t_10.data = NULL;
+
+  /* "peak_finding/interface.pyx":41
+ * 
+ *     cdef Py_ssize_t [:] darr_view = <Py_ssize_t[:darr.size]> darr.arr # type: ignore
+ *     res = np.array(darr_view)             # <<<<<<<<<<<<<<
+ * 
+ *     free(darr.arr)
+*/
+  __pyx_t_4 = NULL;
+  __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_mstate_global->__pyx_n_u_np); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_11);
+  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_mstate_global->__pyx_n_u_array); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_12);
+  __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
+  __pyx_t_11 = __pyx_memoryview_fromslice(__pyx_v_darr_view, 1, (PyObject *(*)(char *)) __pyx_memview_get_Py_ssize_t, (int (*)(char *, PyObject *)) __pyx_memview_set_Py_ssize_t, 0);; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_11);
+  __pyx_t_13 = 1;
+  #if CYTHON_UNPACK_METHODS
+  if (unlikely(PyMethod_Check(__pyx_t_12))) {
+    __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_12);
+    assert(__pyx_t_4);
+    PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_12);
+    __Pyx_INCREF(__pyx_t_4);
+    __Pyx_INCREF(__pyx__function);
+    __Pyx_DECREF_SET(__pyx_t_12, __pyx__function);
+    __pyx_t_13 = 0;
+  }
+  #endif
+  {
+    PyObject *__pyx_callargs[2] = {__pyx_t_4, __pyx_t_11};
+    __pyx_t_8 = __Pyx_PyObject_FastCall(__pyx_t_12, __pyx_callargs+__pyx_t_13, (2-__pyx_t_13) | (__pyx_t_13*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
+    __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
+    __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
+    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 41, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_8);
+  }
+  __pyx_v_res = __pyx_t_8;
+  __pyx_t_8 = 0;
+
+  /* "peak_finding/interface.pyx":43
+ *     res = np.array(darr_view)
+ * 
+ *     free(darr.arr)             # <<<<<<<<<<<<<<
+ *     return res
+*/
+  free(__pyx_v_darr.arr);
+
+  /* "peak_finding/interface.pyx":44
+ * 
+ *     free(darr.arr)
+ *     return res             # <<<<<<<<<<<<<<
+*/
+  __Pyx_XDECREF(__pyx_r);
+  __Pyx_INCREF(__pyx_v_res);
+  __pyx_r = __pyx_v_res;
+  goto __pyx_L0;
+
+  /* "peak_finding/interface.pyx":35
+ * 
+ * 
+ * def find_peaks(iterable, double prominence, Py_ssize_t distance):             # <<<<<<<<<<<<<<
+ *     """Python wrapper to _find_peaks."""
+ *     cdef double [:] x = iterable
+*/
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __PYX_XCLEAR_MEMVIEW(&__pyx_t_1, 1);
+  __Pyx_XDECREF(__pyx_t_4);
+  __Pyx_XDECREF((PyObject *)__pyx_t_7);
+  __Pyx_XDECREF(__pyx_t_8);
+  __PYX_XCLEAR_MEMVIEW(&__pyx_t_10, 1);
+  __Pyx_XDECREF(__pyx_t_11);
+  __Pyx_XDECREF(__pyx_t_12);
+  __Pyx_AddTraceback("peak_finding.interface.find_peaks", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __PYX_XCLEAR_MEMVIEW(&__pyx_v_x, 1);
+  __PYX_XCLEAR_MEMVIEW(&__pyx_v_darr_view, 1);
+  __Pyx_XDECREF(__pyx_v_res);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
@@ -19265,8 +19265,8 @@ static int __Pyx_modinit_function_import_code(__pyx_mstatetype *__pyx_mstate) {
   __pyx_t_1 = PyImport_ImportModule("peak_finding._peak_finding"); if (!__pyx_t_1) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (__Pyx_ImportFunction_3_1_2(__pyx_t_1, "keep_func", (void (**)(void))&__pyx_f_12peak_finding_13_peak_finding_keep_func, "struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr (Py_ssize_t const *, unsigned char const *, Py_ssize_t const )") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction_3_1_2(__pyx_t_1, "find_peaks", (void (**)(void))&__pyx_f_12peak_finding_13_peak_finding_find_peaks, "struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr (double const *, double const , Py_ssize_t const , Py_ssize_t const )") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction_3_1_2(__pyx_t_1, "find_peak", (void (**)(void))&__pyx_f_12peak_finding_13_peak_finding_find_peak, "Py_ssize_t (double const *, double const , Py_ssize_t const , Py_ssize_t const )") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction_3_1_2(__pyx_t_1, "_find_peaks", (void (**)(void))&__pyx_f_12peak_finding_13_peak_finding__find_peaks, "struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr (double const *, double const , Py_ssize_t const , Py_ssize_t const )") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction_3_1_2(__pyx_t_1, "_find_peak", (void (**)(void))&__pyx_f_12peak_finding_13_peak_finding__find_peak, "Py_ssize_t (double const *, double const , Py_ssize_t const , Py_ssize_t const )") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_RefNannyFinishContext();
   return 0;
@@ -20120,40 +20120,40 @@ __Pyx_RefNannySetupContext("PyInit_interface", 0);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_keep_func_wrapper, __pyx_t_5) < 0) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "peak_finding/interface.pyx":21
- *     return np.array([])
+  /* "peak_finding/interface.pyx":22
  * 
- * def find_peak_wrapper(iterable, double prominence, Py_ssize_t distance):             # <<<<<<<<<<<<<<
- *     """Python wrapper to find_peaks for testing."""
- *     cdef double [:] x = iterable
-*/
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_12peak_finding_9interface_3find_peak_wrapper, 0, __pyx_mstate_global->__pyx_n_u_find_peak_wrapper, NULL, __pyx_mstate_global->__pyx_n_u_peak_finding_interface, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[1])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 21, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_find_peak_wrapper, __pyx_t_5) < 0) __PYX_ERR(0, 21, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-
-  /* "peak_finding/interface.pyx":27
- *     return find_peak(&x[0], prominence, distance, 400)
- * 
- * def find_peaks_wrapper(iterable, double prominence, Py_ssize_t distance):             # <<<<<<<<<<<<<<
- *     """Python wrapper to find_peaks for testing."""
- *     cdef double [:] x = iterable
-*/
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_12peak_finding_9interface_5find_peaks_wrapper, 0, __pyx_mstate_global->__pyx_n_u_find_peaks_wrapper, NULL, __pyx_mstate_global->__pyx_n_u_peak_finding_interface, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[2])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 27, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_find_peaks_wrapper, __pyx_t_5) < 0) __PYX_ERR(0, 27, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-
-  /* "peak_finding/interface.pyx":38
- *     return res
  * 
  * def argsort_wrapper(const double[::1] priority):             # <<<<<<<<<<<<<<
  *     """Wraps the C function `argsort` for use in Python (testing)."""
  *     arg_view = <Py_ssize_t[:len(priority)]> argsort(&priority[0], priority.size) #type: ignore
 */
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_12peak_finding_9interface_7argsort_wrapper, 0, __pyx_mstate_global->__pyx_n_u_argsort_wrapper, NULL, __pyx_mstate_global->__pyx_n_u_peak_finding_interface, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[3])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_12peak_finding_9interface_3argsort_wrapper, 0, __pyx_mstate_global->__pyx_n_u_argsort_wrapper, NULL, __pyx_mstate_global->__pyx_n_u_peak_finding_interface, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[1])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_argsort_wrapper, __pyx_t_5) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_argsort_wrapper, __pyx_t_5) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "peak_finding/interface.pyx":28
+ * 
+ * 
+ * def find_peak(iterable, double prominence, Py_ssize_t distance):             # <<<<<<<<<<<<<<
+ *     """Python wrapper to _find_peak."""
+ *     cdef double [:] x = iterable
+*/
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_12peak_finding_9interface_5find_peak, 0, __pyx_mstate_global->__pyx_n_u_find_peak, NULL, __pyx_mstate_global->__pyx_n_u_peak_finding_interface, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[2])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_find_peak, __pyx_t_5) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "peak_finding/interface.pyx":35
+ * 
+ * 
+ * def find_peaks(iterable, double prominence, Py_ssize_t distance):             # <<<<<<<<<<<<<<
+ *     """Python wrapper to _find_peaks."""
+ *     cdef double [:] x = iterable
+*/
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_12peak_finding_9interface_7find_peaks, 0, __pyx_mstate_global->__pyx_n_u_find_peaks, NULL, __pyx_mstate_global->__pyx_n_u_peak_finding_interface, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[3])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_find_peaks, __pyx_t_5) < 0) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "peak_finding/interface.pyx":1
@@ -20298,8 +20298,8 @@ static const __Pyx_StringTabEntry __pyx_string_tab[] = {
   {__pyx_k_encode, sizeof(__pyx_k_encode), 0, 1, 1}, /* PyObject cname: __pyx_n_u_encode */
   {__pyx_k_enumerate, sizeof(__pyx_k_enumerate), 0, 1, 1}, /* PyObject cname: __pyx_n_u_enumerate */
   {__pyx_k_error, sizeof(__pyx_k_error), 0, 1, 1}, /* PyObject cname: __pyx_n_u_error */
-  {__pyx_k_find_peak_wrapper, sizeof(__pyx_k_find_peak_wrapper), 0, 1, 1}, /* PyObject cname: __pyx_n_u_find_peak_wrapper */
-  {__pyx_k_find_peaks_wrapper, sizeof(__pyx_k_find_peaks_wrapper), 0, 1, 1}, /* PyObject cname: __pyx_n_u_find_peaks_wrapper */
+  {__pyx_k_find_peak, sizeof(__pyx_k_find_peak), 0, 1, 1}, /* PyObject cname: __pyx_n_u_find_peak */
+  {__pyx_k_find_peaks, sizeof(__pyx_k_find_peaks), 0, 1, 1}, /* PyObject cname: __pyx_n_u_find_peaks */
   {__pyx_k_flags, sizeof(__pyx_k_flags), 0, 1, 1}, /* PyObject cname: __pyx_n_u_flags */
   {__pyx_k_format, sizeof(__pyx_k_format), 0, 1, 1}, /* PyObject cname: __pyx_n_u_format */
   {__pyx_k_fortran, sizeof(__pyx_k_fortran), 0, 1, 1}, /* PyObject cname: __pyx_n_u_fortran */
@@ -20493,19 +20493,19 @@ static int __Pyx_CreateCodeObjects(__pyx_mstatetype *__pyx_mstate) {
     __pyx_mstate_global->__pyx_codeobj_tab[0] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_peak_finding_interface_pyx, __pyx_mstate->__pyx_n_u_keep_func_wrapper, __pyx_k_1AS_QgQd_Q_b_2Q_xs_G1_r_q_2V1A, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[0])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 21, 28};
-    PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_iterable, __pyx_mstate->__pyx_n_u_prominence, __pyx_mstate->__pyx_n_u_distance, __pyx_mstate->__pyx_n_u_x};
-    __pyx_mstate_global->__pyx_codeobj_tab[1] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_peak_finding_interface_pyx, __pyx_mstate->__pyx_n_u_find_peak_wrapper, __pyx_k_9AQaq_L, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[1])) goto bad;
-  }
-  {
-    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 7, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 27, 68};
-    PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_iterable, __pyx_mstate->__pyx_n_u_prominence, __pyx_mstate->__pyx_n_u_distance, __pyx_mstate->__pyx_n_u_x, __pyx_mstate->__pyx_n_u_darr, __pyx_mstate->__pyx_n_u_darr_view, __pyx_mstate->__pyx_n_u_res};
-    __pyx_mstate_global->__pyx_codeobj_tab[2] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_peak_finding_interface_pyx, __pyx_mstate->__pyx_n_u_find_peaks_wrapper, __pyx_k_Jaq_l_HA_M_XT_F_1_Q_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[2])) goto bad;
-  }
-  {
-    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 38, 40};
+    const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 22, 40};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_priority, __pyx_mstate->__pyx_n_u_arg_view};
-    __pyx_mstate_global->__pyx_codeobj_tab[3] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_peak_finding_interface_pyx, __pyx_mstate->__pyx_n_u_argsort_wrapper, __pyx_k_Cq_G1AXQd_2V1A, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[3])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[1] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_peak_finding_interface_pyx, __pyx_mstate->__pyx_n_u_argsort_wrapper, __pyx_k_Cq_G1AXQd_2V1A, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[1])) goto bad;
+  }
+  {
+    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 28, 28};
+    PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_iterable, __pyx_mstate->__pyx_n_u_prominence, __pyx_mstate->__pyx_n_u_distance, __pyx_mstate->__pyx_n_u_x};
+    __pyx_mstate_global->__pyx_codeobj_tab[2] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_peak_finding_interface_pyx, __pyx_mstate->__pyx_n_u_find_peak, __pyx_k_Qaq_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[2])) goto bad;
+  }
+  {
+    const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 7, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 35, 68};
+    PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_iterable, __pyx_mstate->__pyx_n_u_prominence, __pyx_mstate->__pyx_n_u_distance, __pyx_mstate->__pyx_n_u_x, __pyx_mstate->__pyx_n_u_darr, __pyx_mstate->__pyx_n_u_darr_view, __pyx_mstate->__pyx_n_u_res};
+    __pyx_mstate_global->__pyx_codeobj_tab[3] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_peak_finding_interface_pyx, __pyx_mstate->__pyx_n_u_find_peaks, __pyx_k_Kq_4_XQ_M_XT_F_1_Q_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[3])) goto bad;
   }
   Py_DECREF(tuple_dedup_map);
   return 0;
@@ -26659,6 +26659,11 @@ static CYTHON_INLINE int __pyx_memview_set_Py_ssize_t(const char *itemp, PyObjec
     return 1;
 }
 
+/* MemviewDtypeToObject */
+  static CYTHON_INLINE PyObject *__pyx_memview_get_double__const__(const char *itemp) {
+    return (PyObject *) PyFloat_FromDouble(*(double const  *) itemp);
+}
+
 /* ObjectToMemviewSlice */
   static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_ds_double(PyObject *obj, int writable_flag) {
     __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -26703,11 +26708,6 @@ __pyx_fail:
     result.memview = NULL;
     result.data = NULL;
     return result;
-}
-
-/* MemviewDtypeToObject */
-  static CYTHON_INLINE PyObject *__pyx_memview_get_double__const__(const char *itemp) {
-    return (PyObject *) PyFloat_FromDouble(*(double const  *) itemp);
 }
 
 /* MemviewSliceCopyTemplate */

@@ -1910,7 +1910,7 @@ static unsigned char *(*__pyx_f_12peak_finding_19_peak_finding_utils__select_by_
 
 /* Module declarations from "peak_finding._peak_finding" */
 static struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_f_12peak_finding_13_peak_finding_keep_func(Py_ssize_t const *, unsigned char const *, Py_ssize_t const ); /*proto*/
-static struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const *, double const , Py_ssize_t const , Py_ssize_t const ); /*proto*/
+static struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_f_12peak_finding_13_peak_finding__find_peaks(double const *, double const , Py_ssize_t const , Py_ssize_t const ); /*proto*/
 static unsigned char *__pyx_f_12peak_finding_13_peak_finding__select_by_property(double const *, double const , Py_ssize_t const ); /*proto*/
 /* #### Code section: typeinfo ### */
 /* #### Code section: before_global_var ### */
@@ -2342,7 +2342,7 @@ static unsigned char *__pyx_f_12peak_finding_13_peak_finding__select_by_property
  *     #     keep &= (pmin <= peak_properties)
  *     return keep             # <<<<<<<<<<<<<<
  * 
- * cdef dynamic_arr find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
+ * cdef dynamic_arr _find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
 */
   __pyx_r = __pyx_v_keep;
   goto __pyx_L0;
@@ -2363,12 +2363,12 @@ static unsigned char *__pyx_f_12peak_finding_13_peak_finding__select_by_property
 /* "peak_finding/_peak_finding.pyx":57
  *     return keep
  * 
- * cdef dynamic_arr find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:             # <<<<<<<<<<<<<<
+ * cdef dynamic_arr _find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:             # <<<<<<<<<<<<<<
  *     cdef:
  *         dynamic_arr peaks
 */
 
-static struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_f_12peak_finding_13_peak_finding_find_peaks(double const *__pyx_v_x, double const __pyx_v_prominence, Py_ssize_t const __pyx_v_distance, Py_ssize_t const __pyx_v_size) {
+static struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_f_12peak_finding_13_peak_finding__find_peaks(double const *__pyx_v_x, double const __pyx_v_prominence, Py_ssize_t const __pyx_v_distance, Py_ssize_t const __pyx_v_size) {
   struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_v_peaks;
   unsigned char *__pyx_v_keep;
   Py_ssize_t *__pyx_v_temp;
@@ -2500,7 +2500,7 @@ static struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_f_1
  * 
  *     return peaks             # <<<<<<<<<<<<<<
  * 
- * cdef Py_ssize_t find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
+ * cdef Py_ssize_t _find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
 */
   __pyx_r = __pyx_v_peaks;
   goto __pyx_L0;
@@ -2508,7 +2508,7 @@ static struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_f_1
   /* "peak_finding/_peak_finding.pyx":57
  *     return keep
  * 
- * cdef dynamic_arr find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:             # <<<<<<<<<<<<<<
+ * cdef dynamic_arr _find_peaks(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:             # <<<<<<<<<<<<<<
  *     cdef:
  *         dynamic_arr peaks
 */
@@ -2521,12 +2521,12 @@ static struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_f_1
 /* "peak_finding/_peak_finding.pyx":86
  *     return peaks
  * 
- * cdef Py_ssize_t find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:             # <<<<<<<<<<<<<<
- *     cdef dynamic_arr peaks = find_peaks(x, prominence, distance, size)
+ * cdef Py_ssize_t _find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:             # <<<<<<<<<<<<<<
+ *     cdef dynamic_arr peaks = _find_peaks(x, prominence, distance, size)
  *     cdef Py_ssize_t peak_idx = -1
 */
 
-static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peak(double const *__pyx_v_x, double const __pyx_v_prominence, Py_ssize_t const __pyx_v_distance, Py_ssize_t const __pyx_v_size) {
+static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding__find_peak(double const *__pyx_v_x, double const __pyx_v_prominence, Py_ssize_t const __pyx_v_distance, Py_ssize_t const __pyx_v_size) {
   struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_v_peaks;
   Py_ssize_t __pyx_v_peak_idx;
   Py_ssize_t __pyx_r;
@@ -2534,16 +2534,16 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peak(double const 
 
   /* "peak_finding/_peak_finding.pyx":87
  * 
- * cdef Py_ssize_t find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
- *     cdef dynamic_arr peaks = find_peaks(x, prominence, distance, size)             # <<<<<<<<<<<<<<
+ * cdef Py_ssize_t _find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
+ *     cdef dynamic_arr peaks = _find_peaks(x, prominence, distance, size)             # <<<<<<<<<<<<<<
  *     cdef Py_ssize_t peak_idx = -1
  * 
 */
-  __pyx_v_peaks = __pyx_f_12peak_finding_13_peak_finding_find_peaks(__pyx_v_x, __pyx_v_prominence, __pyx_v_distance, __pyx_v_size);
+  __pyx_v_peaks = __pyx_f_12peak_finding_13_peak_finding__find_peaks(__pyx_v_x, __pyx_v_prominence, __pyx_v_distance, __pyx_v_size);
 
   /* "peak_finding/_peak_finding.pyx":88
- * cdef Py_ssize_t find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
- *     cdef dynamic_arr peaks = find_peaks(x, prominence, distance, size)
+ * cdef Py_ssize_t _find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:
+ *     cdef dynamic_arr peaks = _find_peaks(x, prominence, distance, size)
  *     cdef Py_ssize_t peak_idx = -1             # <<<<<<<<<<<<<<
  * 
  *     if peaks.size == 1:
@@ -2597,8 +2597,8 @@ static Py_ssize_t __pyx_f_12peak_finding_13_peak_finding_find_peak(double const 
   /* "peak_finding/_peak_finding.pyx":86
  *     return peaks
  * 
- * cdef Py_ssize_t find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:             # <<<<<<<<<<<<<<
- *     cdef dynamic_arr peaks = find_peaks(x, prominence, distance, size)
+ * cdef Py_ssize_t _find_peak(const double* x, const double prominence, const Py_ssize_t distance, const Py_ssize_t size) noexcept nogil:             # <<<<<<<<<<<<<<
+ *     cdef dynamic_arr peaks = _find_peaks(x, prominence, distance, size)
  *     cdef Py_ssize_t peak_idx = -1
 */
 
@@ -2653,8 +2653,8 @@ static int __Pyx_modinit_function_export_code(__pyx_mstatetype *__pyx_mstate) {
   __Pyx_RefNannySetupContext("__Pyx_modinit_function_export_code", 0);
   /*--- Function export code ---*/
   if (__Pyx_ExportFunction("keep_func", (void (*)(void))__pyx_f_12peak_finding_13_peak_finding_keep_func, "struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr (Py_ssize_t const *, unsigned char const *, Py_ssize_t const )") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ExportFunction("find_peaks", (void (*)(void))__pyx_f_12peak_finding_13_peak_finding_find_peaks, "struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr (double const *, double const , Py_ssize_t const , Py_ssize_t const )") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ExportFunction("find_peak", (void (*)(void))__pyx_f_12peak_finding_13_peak_finding_find_peak, "Py_ssize_t (double const *, double const , Py_ssize_t const , Py_ssize_t const )") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ExportFunction("_find_peaks", (void (*)(void))__pyx_f_12peak_finding_13_peak_finding__find_peaks, "struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr (double const *, double const , Py_ssize_t const , Py_ssize_t const )") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ExportFunction("_find_peak", (void (*)(void))__pyx_f_12peak_finding_13_peak_finding__find_peak, "Py_ssize_t (double const *, double const , Py_ssize_t const , Py_ssize_t const )") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;

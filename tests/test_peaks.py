@@ -1,17 +1,17 @@
 import numpy as np
-from scipy.signal import find_peaks
+import scipy.signal as signal
 
 from tests.test_utils import DIV_1, DIV_2, DIV_3, DIV_NONE, PRIORITY,\
     DIV_PS_1, DIV_PS_2, DIV_PS_3
 
-from peak_finding.interface import find_peak_wrapper, find_peaks_wrapper, keep_func_wrapper
-from peak_finding.interface import argsort_wrapper
+from peak_finding import find_peak, find_peaks
+from peak_finding.interface import argsort_wrapper, keep_func_wrapper
 
 
 def peak_template(div_samples):
-    a, _ = find_peaks(div_samples, prominence=0.15, distance=10)
-    b = find_peak_wrapper(div_samples, 0.15, 10)
-    c = find_peaks_wrapper(div_samples, 0.15, 10)
+    a, _ = signal.find_peaks(div_samples, prominence=0.15, distance=10)
+    b = find_peak(div_samples, 0.15, 10)
+    c = find_peaks(div_samples, 0.15, 10)
 
     assert np.allclose(a, c)
 

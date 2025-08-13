@@ -1,0 +1,1 @@
+from peak_finding.interface import find_peaks, find_peak

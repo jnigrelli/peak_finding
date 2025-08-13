@@ -3,7 +3,7 @@ import numpy as np
 from libc.stdlib cimport free
 
 from peak_finding._peak_finding_utils cimport dynamic_arr, argsort
-from peak_finding._peak_finding cimport keep_func, find_peaks, find_peak
+from peak_finding._peak_finding cimport keep_func, _find_peaks, _find_peak
 
 
 def keep_func_wrapper(Py_ssize_t[::1] arr, const unsigned char[::1] indices):
@@ -19,26 +19,26 @@ def keep_func_wrapper(Py_ssize_t[::1] arr, const unsigned char[::1] indices):
     return np.array([])
 
 
-def find_peak_wrapper(iterable, double prominence, Py_ssize_t distance):
-    """Python wrapper to find_peaks for testing."""
+def argsort_wrapper(const double[::1] priority):
+    """Wraps the C function `argsort` for use in Python (testing)."""
+    arg_view = <Py_ssize_t[:len(priority)]> argsort(&priority[0], priority.size) #type: ignore
+    return np.array(arg_view)
+
+
+def find_peak(iterable, double prominence, Py_ssize_t distance):
+    """Python wrapper to _find_peak."""
     cdef double [:] x = iterable
 
-    return find_peak(&x[0], prominence, distance, 400)
+    return _find_peak(&x[0], prominence, distance, 400)
 
 
-def find_peaks_wrapper(iterable, double prominence, Py_ssize_t distance):
-    """Python wrapper to find_peaks for testing."""
+def find_peaks(iterable, double prominence, Py_ssize_t distance):
+    """Python wrapper to _find_peaks."""
     cdef double [:] x = iterable
-    cdef dynamic_arr darr = find_peaks(&x[0], prominence, distance, iterable.size)
+    cdef dynamic_arr darr = _find_peaks(&x[0], prominence, distance, iterable.size)
 
     cdef Py_ssize_t [:] darr_view = <Py_ssize_t[:darr.size]> darr.arr # type: ignore
     res = np.array(darr_view)
 
     free(darr.arr)
     return res
-
-
-def argsort_wrapper(const double[::1] priority):
-    """Wraps the C function `argsort` for use in Python (testing)."""
-    arg_view = <Py_ssize_t[:len(priority)]> argsort(&priority[0], priority.size) #type: ignore
-    return np.array(arg_view)
