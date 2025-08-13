@@ -3022,7 +3022,6 @@ static const char __pyx_k_contiguous_and_direct[] = "<contiguous and direct>";
 static const char __pyx_k_Cannot_index_with_type[] = "Cannot index with type '";
 static const char __pyx_k_peak_finding_interface[] = "peak_finding.interface";
 static const char __pyx_k_contiguous_and_indirect[] = "<contiguous and indirect>";
-static const char __pyx_k_q_1_Kq_Qd_j_M_XT_F_1_Q_1[] = "\320\000\022\220-\320\037/\250q\330\010\031\230\034\240[\260\001\330\010\t\340\004\033\2301\330\004\034\230K\240q\250\001\250\024\250Q\250d\260,\270j\310\001\310\021\340\004$\240M\260\024\260X\270T\300\021\330\004\n\210\"\210F\220!\2201\340\004\010\210\001\210\024\210Q\330\004\013\2101";
 static const char __pyx_k_Dimension_d_is_not_direct[] = "Dimension %d is not direct";
 static const char __pyx_k_Index_out_of_bounds_axis_d[] = "Index out of bounds (axis %d)";
 static const char __pyx_k_Step_may_not_be_zero_axis_d[] = "Step may not be zero (axis %d)";
@@ -3033,6 +3032,7 @@ static const char __pyx_k_height_is_not_implemented_yet[] = "height is not imple
 static const char __pyx_k_unable_to_allocate_array_data[] = "unable to allocate array data.";
 static const char __pyx_k_1AS_QgQd_Q_b_2Q_xs_G1_r_q_2V1A[] = "\200\001\340\004\032\230)\2401\240A\240S\250\001\250\024\250Q\250g\260Q\260d\270#\270Q\330\004\016\210b\220\001\330\004\013\2102\210Q\340\004\007\200x\210s\220!\330\010\027\220}\240G\2501\330\010\017\210r\220\026\220q\230\001\340\004\013\2102\210V\2201\220A";
 static const char __pyx_k_a_wgQ_j_z_j_vWA_1_uG1_1_1_G1_1[] = "\320\000\021\220\035\320\036.\250a\330\010\031\230\034\240[\260\001\330\010\t\340\004\007\200w\210g\220Q\330\010\016\210j\230\001\230\021\340\004\007\200z\220\027\230\001\330\010\016\210j\230\001\230\021\340\004\007\200v\210W\220A\330\010\022\220!\2201\340\004\007\200u\210G\2201\330\010\022\220!\2201\340\004\007\200{\220'\230\021\330\010\022\220!\2201\340\004\007\200}\220G\2301\330\010\022\220!\2201\340\004\033\2301\340\004\013\210:\220Q\220a\220t\2301\230D\240\014\250J\260d\270!";
+static const char __pyx_k_q_wgQ_j_z_j_vWA_1_uG1_1_1_G1_1[] = "\320\000\022\220-\320\037/\250q\330\010\031\230\034\240[\260\001\330\010\t\340\004\007\200w\210g\220Q\330\010\016\210j\230\001\230\021\340\004\007\200z\220\027\230\001\330\010\016\210j\230\001\230\021\340\004\007\200v\210W\220A\330\010\022\220!\2201\340\004\007\200u\210G\2201\330\010\022\220!\2201\340\004\007\200{\220'\230\021\330\010\022\220!\2201\340\004\007\200}\220G\2301\330\010\022\220!\2201\340\004\033\2301\330\004\034\230K\240q\250\001\250\024\250Q\250d\260,\270j\310\001\310\021\340\004$\240M\260\024\260X\270T\300\021\330\004\n\210\"\210F\220!\2201\340\004\010\210\001\210\024\210Q\330\004\013\2105\220\001";
 static const char __pyx_k_src_peak_finding_interface_pyx[] = "src/peak_finding/interface.pyx";
 static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";
 static const char __pyx_k_plateau_size_is_not_implemented[] = "plateau_size is not implemented yet";
@@ -3100,7 +3100,7 @@ static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSE
 static PyObject *__pyx_pf_12peak_finding_9interface_keep_func_wrapper(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_arr, __Pyx_memviewslice __pyx_v_indices); /* proto */
 static PyObject *__pyx_pf_12peak_finding_9interface_2argsort_wrapper(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_priority); /* proto */
 static PyObject *__pyx_pf_12peak_finding_9interface_4find_peak(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_height, PyObject *__pyx_v_threshold, PyObject *__pyx_v_distance, PyObject *__pyx_v_prominence, PyObject *__pyx_v_width, PyObject *__pyx_v_wlen, PyObject *__pyx_v_rel_height, PyObject *__pyx_v_plateau_size); /* proto */
-static PyObject *__pyx_pf_12peak_finding_9interface_6find_peaks(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, CYTHON_UNUSED PyObject *__pyx_v_height, CYTHON_UNUSED PyObject *__pyx_v_threshold, PyObject *__pyx_v_distance, PyObject *__pyx_v_prominence, CYTHON_UNUSED PyObject *__pyx_v_width, CYTHON_UNUSED PyObject *__pyx_v_wlen, CYTHON_UNUSED PyObject *__pyx_v_rel_height, CYTHON_UNUSED PyObject *__pyx_v_plateau_size); /* proto */
+static PyObject *__pyx_pf_12peak_finding_9interface_6find_peaks(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_height, PyObject *__pyx_v_threshold, PyObject *__pyx_v_distance, PyObject *__pyx_v_prominence, PyObject *__pyx_v_width, PyObject *__pyx_v_wlen, PyObject *__pyx_v_rel_height, PyObject *__pyx_v_plateau_size); /* proto */
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -18322,14 +18322,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ) {
   PyObject *__pyx_v_x = 0;
-  CYTHON_UNUSED PyObject *__pyx_v_height = 0;
-  CYTHON_UNUSED PyObject *__pyx_v_threshold = 0;
+  PyObject *__pyx_v_height = 0;
+  PyObject *__pyx_v_threshold = 0;
   PyObject *__pyx_v_distance = 0;
   PyObject *__pyx_v_prominence = 0;
-  CYTHON_UNUSED PyObject *__pyx_v_width = 0;
-  CYTHON_UNUSED PyObject *__pyx_v_wlen = 0;
-  CYTHON_UNUSED PyObject *__pyx_v_rel_height = 0;
-  CYTHON_UNUSED PyObject *__pyx_v_plateau_size = 0;
+  PyObject *__pyx_v_width = 0;
+  PyObject *__pyx_v_wlen = 0;
+  PyObject *__pyx_v_rel_height = 0;
+  PyObject *__pyx_v_plateau_size = 0;
   #if !CYTHON_METH_FASTCALL
   CYTHON_UNUSED Py_ssize_t __pyx_nargs;
   #endif
@@ -18417,7 +18417,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
  *         prominence=None, width=None, wlen=None, rel_height=0.5,
  *         plateau_size=None):             # <<<<<<<<<<<<<<
  *     """Python wrapper to _find_peaks."""
- *     cdef double [:] view = x
+ *     if height is not None:
 */
       if (!values[8]) values[8] = __Pyx_NewRef(((PyObject *)Py_None));
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
@@ -18492,7 +18492,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
  *         prominence=None, width=None, wlen=None, rel_height=0.5,
  *         plateau_size=None):             # <<<<<<<<<<<<<<
  *     """Python wrapper to _find_peaks."""
- *     cdef double [:] view = x
+ *     if height is not None:
 */
       if (!values[8]) values[8] = __Pyx_NewRef(((PyObject *)Py_None));
     }
@@ -18537,28 +18537,29 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12peak_finding_9interface_6find_peaks(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, CYTHON_UNUSED PyObject *__pyx_v_height, CYTHON_UNUSED PyObject *__pyx_v_threshold, PyObject *__pyx_v_distance, PyObject *__pyx_v_prominence, CYTHON_UNUSED PyObject *__pyx_v_width, CYTHON_UNUSED PyObject *__pyx_v_wlen, CYTHON_UNUSED PyObject *__pyx_v_rel_height, CYTHON_UNUSED PyObject *__pyx_v_plateau_size) {
+static PyObject *__pyx_pf_12peak_finding_9interface_6find_peaks(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_height, PyObject *__pyx_v_threshold, PyObject *__pyx_v_distance, PyObject *__pyx_v_prominence, PyObject *__pyx_v_width, PyObject *__pyx_v_wlen, PyObject *__pyx_v_rel_height, PyObject *__pyx_v_plateau_size) {
   __Pyx_memviewslice __pyx_v_view = { 0, 0, { 0 }, { 0 }, { 0 } };
   struct __pyx_t_12peak_finding_19_peak_finding_utils_dynamic_arr __pyx_v_darr;
   __Pyx_memviewslice __pyx_v_darr_view = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_v_res = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
-  __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  Py_ssize_t __pyx_t_2;
-  int __pyx_t_3;
-  double __pyx_t_4;
-  Py_ssize_t __pyx_t_5;
-  PyObject *__pyx_t_6 = NULL;
+  int __pyx_t_1;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  PyObject *__pyx_t_4 = NULL;
+  size_t __pyx_t_5;
+  __Pyx_memviewslice __pyx_t_6 = { 0, 0, { 0 }, { 0 }, { 0 } };
   Py_ssize_t __pyx_t_7;
-  Py_ssize_t *__pyx_t_8;
-  struct __pyx_array_obj *__pyx_t_9 = NULL;
-  PyObject *__pyx_t_10 = NULL;
-  char *__pyx_t_11;
-  __Pyx_memviewslice __pyx_t_12 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  PyObject *__pyx_t_13 = NULL;
-  PyObject *__pyx_t_14 = NULL;
-  size_t __pyx_t_15;
+  int __pyx_t_8;
+  double __pyx_t_9;
+  Py_ssize_t __pyx_t_10;
+  Py_ssize_t __pyx_t_11;
+  Py_ssize_t *__pyx_t_12;
+  struct __pyx_array_obj *__pyx_t_13 = NULL;
+  char *__pyx_t_14;
+  __Pyx_memviewslice __pyx_t_15 = { 0, 0, { 0 }, { 0 }, { 0 } };
+  PyObject *__pyx_t_16 = NULL;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -18567,126 +18568,380 @@ static PyObject *__pyx_pf_12peak_finding_9interface_6find_peaks(CYTHON_UNUSED Py
   /* "peak_finding/interface.pyx":59
  *         plateau_size=None):
  *     """Python wrapper to _find_peaks."""
+ *     if height is not None:             # <<<<<<<<<<<<<<
+ *         raise ValueError("height is not implemented yet")
+ * 
+*/
+  __pyx_t_1 = (__pyx_v_height != Py_None);
+  if (unlikely(__pyx_t_1)) {
+
+    /* "peak_finding/interface.pyx":60
+ *     """Python wrapper to _find_peaks."""
+ *     if height is not None:
+ *         raise ValueError("height is not implemented yet")             # <<<<<<<<<<<<<<
+ * 
+ *     if threshold is not None:
+*/
+    __pyx_t_3 = NULL;
+    __Pyx_INCREF(__pyx_builtin_ValueError);
+    __pyx_t_4 = __pyx_builtin_ValueError; 
+    __pyx_t_5 = 1;
+    {
+      PyObject *__pyx_callargs[2] = {__pyx_t_3, __pyx_mstate_global->__pyx_kp_u_height_is_not_implemented_yet};
+      __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+__pyx_t_5, (2-__pyx_t_5) | (__pyx_t_5*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 60, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+    }
+    __Pyx_Raise(__pyx_t_2, 0, 0, 0);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __PYX_ERR(0, 60, __pyx_L1_error)
+
+    /* "peak_finding/interface.pyx":59
+ *         plateau_size=None):
+ *     """Python wrapper to _find_peaks."""
+ *     if height is not None:             # <<<<<<<<<<<<<<
+ *         raise ValueError("height is not implemented yet")
+ * 
+*/
+  }
+
+  /* "peak_finding/interface.pyx":62
+ *         raise ValueError("height is not implemented yet")
+ * 
+ *     if threshold is not None:             # <<<<<<<<<<<<<<
+ *         raise ValueError("threshold is not implemented yet")
+ * 
+*/
+  __pyx_t_1 = (__pyx_v_threshold != Py_None);
+  if (unlikely(__pyx_t_1)) {
+
+    /* "peak_finding/interface.pyx":63
+ * 
+ *     if threshold is not None:
+ *         raise ValueError("threshold is not implemented yet")             # <<<<<<<<<<<<<<
+ * 
+ *     if width is not None:
+*/
+    __pyx_t_4 = NULL;
+    __Pyx_INCREF(__pyx_builtin_ValueError);
+    __pyx_t_3 = __pyx_builtin_ValueError; 
+    __pyx_t_5 = 1;
+    {
+      PyObject *__pyx_callargs[2] = {__pyx_t_4, __pyx_mstate_global->__pyx_kp_u_threshold_is_not_implemented_yet};
+      __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+__pyx_t_5, (2-__pyx_t_5) | (__pyx_t_5*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
+      __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+    }
+    __Pyx_Raise(__pyx_t_2, 0, 0, 0);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __PYX_ERR(0, 63, __pyx_L1_error)
+
+    /* "peak_finding/interface.pyx":62
+ *         raise ValueError("height is not implemented yet")
+ * 
+ *     if threshold is not None:             # <<<<<<<<<<<<<<
+ *         raise ValueError("threshold is not implemented yet")
+ * 
+*/
+  }
+
+  /* "peak_finding/interface.pyx":65
+ *         raise ValueError("threshold is not implemented yet")
+ * 
+ *     if width is not None:             # <<<<<<<<<<<<<<
+ *         ValueError("width is not implemented yet")
+ * 
+*/
+  __pyx_t_1 = (__pyx_v_width != Py_None);
+  if (__pyx_t_1) {
+
+    /* "peak_finding/interface.pyx":66
+ * 
+ *     if width is not None:
+ *         ValueError("width is not implemented yet")             # <<<<<<<<<<<<<<
+ * 
+ *     if wlen is not None:
+*/
+    __pyx_t_3 = NULL;
+    __Pyx_INCREF(__pyx_builtin_ValueError);
+    __pyx_t_4 = __pyx_builtin_ValueError; 
+    __pyx_t_5 = 1;
+    {
+      PyObject *__pyx_callargs[2] = {__pyx_t_3, __pyx_mstate_global->__pyx_kp_u_width_is_not_implemented_yet};
+      __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+__pyx_t_5, (2-__pyx_t_5) | (__pyx_t_5*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+    }
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "peak_finding/interface.pyx":65
+ *         raise ValueError("threshold is not implemented yet")
+ * 
+ *     if width is not None:             # <<<<<<<<<<<<<<
+ *         ValueError("width is not implemented yet")
+ * 
+*/
+  }
+
+  /* "peak_finding/interface.pyx":68
+ *         ValueError("width is not implemented yet")
+ * 
+ *     if wlen is not None:             # <<<<<<<<<<<<<<
+ *         ValueError("wlen is not implemented yet")
+ * 
+*/
+  __pyx_t_1 = (__pyx_v_wlen != Py_None);
+  if (__pyx_t_1) {
+
+    /* "peak_finding/interface.pyx":69
+ * 
+ *     if wlen is not None:
+ *         ValueError("wlen is not implemented yet")             # <<<<<<<<<<<<<<
+ * 
+ *     if rel_height is not None:
+*/
+    __pyx_t_4 = NULL;
+    __Pyx_INCREF(__pyx_builtin_ValueError);
+    __pyx_t_3 = __pyx_builtin_ValueError; 
+    __pyx_t_5 = 1;
+    {
+      PyObject *__pyx_callargs[2] = {__pyx_t_4, __pyx_mstate_global->__pyx_kp_u_wlen_is_not_implemented_yet};
+      __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+__pyx_t_5, (2-__pyx_t_5) | (__pyx_t_5*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
+      __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 69, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+    }
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "peak_finding/interface.pyx":68
+ *         ValueError("width is not implemented yet")
+ * 
+ *     if wlen is not None:             # <<<<<<<<<<<<<<
+ *         ValueError("wlen is not implemented yet")
+ * 
+*/
+  }
+
+  /* "peak_finding/interface.pyx":71
+ *         ValueError("wlen is not implemented yet")
+ * 
+ *     if rel_height is not None:             # <<<<<<<<<<<<<<
+ *         ValueError("rel_height is not implemented yet")
+ * 
+*/
+  __pyx_t_1 = (__pyx_v_rel_height != Py_None);
+  if (__pyx_t_1) {
+
+    /* "peak_finding/interface.pyx":72
+ * 
+ *     if rel_height is not None:
+ *         ValueError("rel_height is not implemented yet")             # <<<<<<<<<<<<<<
+ * 
+ *     if plateau_size is not None:
+*/
+    __pyx_t_3 = NULL;
+    __Pyx_INCREF(__pyx_builtin_ValueError);
+    __pyx_t_4 = __pyx_builtin_ValueError; 
+    __pyx_t_5 = 1;
+    {
+      PyObject *__pyx_callargs[2] = {__pyx_t_3, __pyx_mstate_global->__pyx_kp_u_rel_height_is_not_implemented_ye};
+      __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+__pyx_t_5, (2-__pyx_t_5) | (__pyx_t_5*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 72, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+    }
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "peak_finding/interface.pyx":71
+ *         ValueError("wlen is not implemented yet")
+ * 
+ *     if rel_height is not None:             # <<<<<<<<<<<<<<
+ *         ValueError("rel_height is not implemented yet")
+ * 
+*/
+  }
+
+  /* "peak_finding/interface.pyx":74
+ *         ValueError("rel_height is not implemented yet")
+ * 
+ *     if plateau_size is not None:             # <<<<<<<<<<<<<<
+ *         ValueError("plateau_size is not implemented yet")
+ * 
+*/
+  __pyx_t_1 = (__pyx_v_plateau_size != Py_None);
+  if (__pyx_t_1) {
+
+    /* "peak_finding/interface.pyx":75
+ * 
+ *     if plateau_size is not None:
+ *         ValueError("plateau_size is not implemented yet")             # <<<<<<<<<<<<<<
+ * 
+ *     cdef double [:] view = x
+*/
+    __pyx_t_4 = NULL;
+    __Pyx_INCREF(__pyx_builtin_ValueError);
+    __pyx_t_3 = __pyx_builtin_ValueError; 
+    __pyx_t_5 = 1;
+    {
+      PyObject *__pyx_callargs[2] = {__pyx_t_4, __pyx_mstate_global->__pyx_kp_u_plateau_size_is_not_implemented};
+      __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+__pyx_t_5, (2-__pyx_t_5) | (__pyx_t_5*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
+      __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+    }
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "peak_finding/interface.pyx":74
+ *         ValueError("rel_height is not implemented yet")
+ * 
+ *     if plateau_size is not None:             # <<<<<<<<<<<<<<
+ *         ValueError("plateau_size is not implemented yet")
+ * 
+*/
+  }
+
+  /* "peak_finding/interface.pyx":77
+ *         ValueError("plateau_size is not implemented yet")
+ * 
  *     cdef double [:] view = x             # <<<<<<<<<<<<<<
  *     cdef dynamic_arr darr = _find_peaks(&view[0], prominence, distance, x.size)
  * 
 */
-  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_x, PyBUF_WRITABLE); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 59, __pyx_L1_error)
-  __pyx_v_view = __pyx_t_1;
-  __pyx_t_1.memview = NULL;
-  __pyx_t_1.data = NULL;
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_x, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 77, __pyx_L1_error)
+  __pyx_v_view = __pyx_t_6;
+  __pyx_t_6.memview = NULL;
+  __pyx_t_6.data = NULL;
 
-  /* "peak_finding/interface.pyx":60
- *     """Python wrapper to _find_peaks."""
+  /* "peak_finding/interface.pyx":78
+ * 
  *     cdef double [:] view = x
  *     cdef dynamic_arr darr = _find_peaks(&view[0], prominence, distance, x.size)             # <<<<<<<<<<<<<<
  * 
  *     cdef Py_ssize_t [:] darr_view = <Py_ssize_t[:darr.size]> darr.arr # type: ignore
 */
-  __pyx_t_2 = 0;
-  __pyx_t_3 = -1;
-  if (__pyx_t_2 < 0) {
-    __pyx_t_2 += __pyx_v_view.shape[0];
-    if (unlikely(__pyx_t_2 < 0)) __pyx_t_3 = 0;
-  } else if (unlikely(__pyx_t_2 >= __pyx_v_view.shape[0])) __pyx_t_3 = 0;
-  if (unlikely(__pyx_t_3 != -1)) {
-    __Pyx_RaiseBufferIndexError(__pyx_t_3);
-    __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_7 = 0;
+  __pyx_t_8 = -1;
+  if (__pyx_t_7 < 0) {
+    __pyx_t_7 += __pyx_v_view.shape[0];
+    if (unlikely(__pyx_t_7 < 0)) __pyx_t_8 = 0;
+  } else if (unlikely(__pyx_t_7 >= __pyx_v_view.shape[0])) __pyx_t_8 = 0;
+  if (unlikely(__pyx_t_8 != -1)) {
+    __Pyx_RaiseBufferIndexError(__pyx_t_8);
+    __PYX_ERR(0, 78, __pyx_L1_error)
   }
-  __pyx_t_4 = __Pyx_PyFloat_AsDouble(__pyx_v_prominence); if (unlikely((__pyx_t_4 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 60, __pyx_L1_error)
-  __pyx_t_5 = __Pyx_PyIndex_AsSsize_t(__pyx_v_distance); if (unlikely((__pyx_t_5 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 60, __pyx_L1_error)
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_mstate_global->__pyx_n_u_size); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 60, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_7 = __Pyx_PyIndex_AsSsize_t(__pyx_t_6); if (unlikely((__pyx_t_7 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 60, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_v_darr = __pyx_f_12peak_finding_13_peak_finding__find_peaks((&(*((double *) ( /* dim=0 */ (__pyx_v_view.data + __pyx_t_2 * __pyx_v_view.strides[0]) )))), __pyx_t_4, __pyx_t_5, __pyx_t_7);
+  __pyx_t_9 = __Pyx_PyFloat_AsDouble(__pyx_v_prominence); if (unlikely((__pyx_t_9 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 78, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyIndex_AsSsize_t(__pyx_v_distance); if (unlikely((__pyx_t_10 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 78, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_mstate_global->__pyx_n_u_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_11 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_11 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 78, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_darr = __pyx_f_12peak_finding_13_peak_finding__find_peaks((&(*((double *) ( /* dim=0 */ (__pyx_v_view.data + __pyx_t_7 * __pyx_v_view.strides[0]) )))), __pyx_t_9, __pyx_t_10, __pyx_t_11);
 
-  /* "peak_finding/interface.pyx":62
+  /* "peak_finding/interface.pyx":80
  *     cdef dynamic_arr darr = _find_peaks(&view[0], prominence, distance, x.size)
  * 
  *     cdef Py_ssize_t [:] darr_view = <Py_ssize_t[:darr.size]> darr.arr # type: ignore             # <<<<<<<<<<<<<<
  *     res = np.array(darr_view)
  * 
 */
-  __pyx_t_8 = __pyx_v_darr.arr;
-  if (!__pyx_t_8) {
+  __pyx_t_12 = __pyx_v_darr.arr;
+  if (!__pyx_t_12) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(0, 62, __pyx_L1_error)
+    __PYX_ERR(0, 80, __pyx_L1_error)
   }
-  __pyx_t_10 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_Py_ssize_t); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 62, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_6 = Py_BuildValue("("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_v_darr.size)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 62, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_6);
+  __pyx_t_3 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_Py_ssize_t); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 80, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = Py_BuildValue("("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_v_darr.size)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 80, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   #if CYTHON_COMPILING_IN_LIMITED_API
-  __pyx_t_11 = PyBytes_AsString(__pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_t_14 = PyBytes_AsString(__pyx_t_3); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 80, __pyx_L1_error)
   #else
-  __pyx_t_11 = PyBytes_AS_STRING(__pyx_t_10);
+  __pyx_t_14 = PyBytes_AS_STRING(__pyx_t_3);
   #endif
-  __pyx_t_9 = __pyx_array_new(__pyx_t_6, sizeof(Py_ssize_t), __pyx_t_11, "c", (char *) __pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 62, __pyx_L1_error)
-  __Pyx_GOTREF((PyObject *)__pyx_t_9);
-  __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  __pyx_t_12 = __Pyx_PyObject_to_MemoryviewSlice_ds_Py_ssize_t(((PyObject *)__pyx_t_9), PyBUF_WRITABLE); if (unlikely(!__pyx_t_12.memview)) __PYX_ERR(0, 62, __pyx_L1_error)
-  __Pyx_DECREF((PyObject *)__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_v_darr_view = __pyx_t_12;
-  __pyx_t_12.memview = NULL;
-  __pyx_t_12.data = NULL;
+  __pyx_t_13 = __pyx_array_new(__pyx_t_2, sizeof(Py_ssize_t), __pyx_t_14, "c", (char *) __pyx_t_12); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 80, __pyx_L1_error)
+  __Pyx_GOTREF((PyObject *)__pyx_t_13);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_t_15 = __Pyx_PyObject_to_MemoryviewSlice_ds_Py_ssize_t(((PyObject *)__pyx_t_13), PyBUF_WRITABLE); if (unlikely(!__pyx_t_15.memview)) __PYX_ERR(0, 80, __pyx_L1_error)
+  __Pyx_DECREF((PyObject *)__pyx_t_13); __pyx_t_13 = 0;
+  __pyx_v_darr_view = __pyx_t_15;
+  __pyx_t_15.memview = NULL;
+  __pyx_t_15.data = NULL;
 
-  /* "peak_finding/interface.pyx":63
+  /* "peak_finding/interface.pyx":81
  * 
  *     cdef Py_ssize_t [:] darr_view = <Py_ssize_t[:darr.size]> darr.arr # type: ignore
  *     res = np.array(darr_view)             # <<<<<<<<<<<<<<
  * 
  *     free(darr.arr)
 */
-  __pyx_t_6 = NULL;
-  __Pyx_GetModuleGlobalName(__pyx_t_13, __pyx_mstate_global->__pyx_n_u_np); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_13);
-  __pyx_t_14 = __Pyx_PyObject_GetAttrStr(__pyx_t_13, __pyx_mstate_global->__pyx_n_u_array); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_14);
-  __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-  __pyx_t_13 = __pyx_memoryview_fromslice(__pyx_v_darr_view, 1, (PyObject *(*)(char *)) __pyx_memview_get_Py_ssize_t, (int (*)(char *, PyObject *)) __pyx_memview_set_Py_ssize_t, 0);; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 63, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_13);
-  __pyx_t_15 = 1;
+  __pyx_t_2 = NULL;
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_array); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_16);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_darr_view, 1, (PyObject *(*)(char *)) __pyx_memview_get_Py_ssize_t, (int (*)(char *, PyObject *)) __pyx_memview_set_Py_ssize_t, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_5 = 1;
   #if CYTHON_UNPACK_METHODS
-  if (unlikely(PyMethod_Check(__pyx_t_14))) {
-    __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_14);
-    assert(__pyx_t_6);
-    PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_14);
-    __Pyx_INCREF(__pyx_t_6);
+  if (unlikely(PyMethod_Check(__pyx_t_16))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_16);
+    assert(__pyx_t_2);
+    PyObject* __pyx__function = PyMethod_GET_FUNCTION(__pyx_t_16);
+    __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx__function);
-    __Pyx_DECREF_SET(__pyx_t_14, __pyx__function);
-    __pyx_t_15 = 0;
+    __Pyx_DECREF_SET(__pyx_t_16, __pyx__function);
+    __pyx_t_5 = 0;
   }
   #endif
   {
-    PyObject *__pyx_callargs[2] = {__pyx_t_6, __pyx_t_13};
-    __pyx_t_10 = __Pyx_PyObject_FastCall(__pyx_t_14, __pyx_callargs+__pyx_t_15, (2-__pyx_t_15) | (__pyx_t_15*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
-    __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-    __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
-    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 63, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_10);
+    PyObject *__pyx_callargs[2] = {__pyx_t_2, __pyx_t_4};
+    __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_16, __pyx_callargs+__pyx_t_5, (2-__pyx_t_5) | (__pyx_t_5*__Pyx_PY_VECTORCALL_ARGUMENTS_OFFSET));
+    __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 81, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
   }
-  __pyx_v_res = __pyx_t_10;
-  __pyx_t_10 = 0;
+  __pyx_v_res = __pyx_t_3;
+  __pyx_t_3 = 0;
 
-  /* "peak_finding/interface.pyx":65
+  /* "peak_finding/interface.pyx":83
  *     res = np.array(darr_view)
  * 
  *     free(darr.arr)             # <<<<<<<<<<<<<<
- *     return res
+ *     return res, {}
 */
   free(__pyx_v_darr.arr);
 
-  /* "peak_finding/interface.pyx":66
+  /* "peak_finding/interface.pyx":84
  * 
  *     free(darr.arr)
- *     return res             # <<<<<<<<<<<<<<
+ *     return res, {}             # <<<<<<<<<<<<<<
 */
   __Pyx_XDECREF(__pyx_r);
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_16 = PyTuple_New(2); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_16);
   __Pyx_INCREF(__pyx_v_res);
-  __pyx_r = __pyx_v_res;
+  __Pyx_GIVEREF(__pyx_v_res);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_16, 0, __pyx_v_res) != (0)) __PYX_ERR(0, 84, __pyx_L1_error);
+  __Pyx_GIVEREF(__pyx_t_3);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_16, 1, __pyx_t_3) != (0)) __PYX_ERR(0, 84, __pyx_L1_error);
+  __pyx_t_3 = 0;
+  __pyx_r = __pyx_t_16;
+  __pyx_t_16 = 0;
   goto __pyx_L0;
 
   /* "peak_finding/interface.pyx":55
@@ -18699,13 +18954,13 @@ static PyObject *__pyx_pf_12peak_finding_9interface_6find_peaks(CYTHON_UNUSED Py
 
   /* function exit code */
   __pyx_L1_error:;
-  __PYX_XCLEAR_MEMVIEW(&__pyx_t_1, 1);
-  __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_XDECREF((PyObject *)__pyx_t_9);
-  __Pyx_XDECREF(__pyx_t_10);
-  __PYX_XCLEAR_MEMVIEW(&__pyx_t_12, 1);
-  __Pyx_XDECREF(__pyx_t_13);
-  __Pyx_XDECREF(__pyx_t_14);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_4);
+  __PYX_XCLEAR_MEMVIEW(&__pyx_t_6, 1);
+  __Pyx_XDECREF((PyObject *)__pyx_t_13);
+  __PYX_XCLEAR_MEMVIEW(&__pyx_t_15, 1);
+  __Pyx_XDECREF(__pyx_t_16);
   __Pyx_AddTraceback("peak_finding.interface.find_peaks", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
@@ -21088,9 +21343,9 @@ static int __Pyx_CreateCodeObjects(__pyx_mstatetype *__pyx_mstate) {
     __pyx_mstate_global->__pyx_codeobj_tab[2] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_peak_finding_interface_pyx, __pyx_mstate->__pyx_n_u_find_peak, __pyx_k_a_wgQ_j_z_j_vWA_1_uG1_1_1_G1_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[2])) goto bad;
   }
   {
-    const __Pyx_PyCode_New_function_description descr = {9, 0, 0, 13, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 55, 88};
+    const __Pyx_PyCode_New_function_description descr = {9, 0, 0, 13, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 55, 190};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_x, __pyx_mstate->__pyx_n_u_height, __pyx_mstate->__pyx_n_u_threshold, __pyx_mstate->__pyx_n_u_distance, __pyx_mstate->__pyx_n_u_prominence, __pyx_mstate->__pyx_n_u_width, __pyx_mstate->__pyx_n_u_wlen, __pyx_mstate->__pyx_n_u_rel_height, __pyx_mstate->__pyx_n_u_plateau_size, __pyx_mstate->__pyx_n_u_view, __pyx_mstate->__pyx_n_u_darr, __pyx_mstate->__pyx_n_u_darr_view, __pyx_mstate->__pyx_n_u_res};
-    __pyx_mstate_global->__pyx_codeobj_tab[3] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_peak_finding_interface_pyx, __pyx_mstate->__pyx_n_u_find_peaks, __pyx_k_q_1_Kq_Qd_j_M_XT_F_1_Q_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[3])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[3] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_peak_finding_interface_pyx, __pyx_mstate->__pyx_n_u_find_peaks, __pyx_k_q_wgQ_j_z_j_vWA_1_uG1_1_1_G1_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[3])) goto bad;
   }
   Py_DECREF(tuple_dedup_map);
   return 0;

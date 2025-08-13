@@ -81,4 +81,4 @@ def find_peaks(x, height=None, threshold=None, distance=None,
     res = np.array(darr_view)
 
     free(darr.arr)
-    return res
+    return res, {}
